@@ -1,5 +1,5 @@
 # Portfolio
-Second version of my personal page, is designed and developed with::
+Second version of my personal page, is designed and developed with:
 
 >- **Python 3.8.2**
 >- **Django 3.0.4**
