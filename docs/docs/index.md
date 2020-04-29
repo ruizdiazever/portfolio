@@ -1,10 +1,4 @@
-# Portfolio version 2
+# Home
 
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
+* [Diagrams](https://app.diagrams.net/)
+    > Usamos esta herramienta para diseñar y exportar nuestros diagramas en HTML para inyectarlo a nuestra web.
