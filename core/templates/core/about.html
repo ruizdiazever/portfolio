@@ -1,0 +1,49 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}About{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3 col-md-4 offset-lg-1">
+            <img class="img-fluid avatar" src="{% static 'core/img/avatar.jpg' %}" alt="">
+        </div>
+        <div class="col-lg-7 col-md-8">
+            <h2 class="section-heading">Ever Ruiz Diaz</h2>
+            <p>Hello! I am Ever. I became a web developer because i love solving complex 
+                problems and I want to make a difference.
+
+                I am currently based in Rome but i was born and bred in Buenos Aires.
+
+                Although my professional path has taken twists and turns, I have always 
+                nurtured my deep passion in computer science. I become a self-taught
+                HTML5, CSS3 and Bootstrap and Java mobile programming in Android at the 
+                age of 24.
+
+                Soon after, I shifted my interests to web development and I met PYTHON. 
+                This is how my never ending love with DJANGO started.
+
+                I have done work on all sorts of web projects ranging from software 
+                development and mobile app creation to front-end/back-end web design 
+                and development and database/server management.
+
+                Curious by nature and eager to develop new skills, I always find the 
+                time to keep myself up-to-date with the latest technologies. I am currently 
+                studying DOCKER and increasing my expertise on JavaSript.
+
+                In 2017, I participated to the competition “Plan your Future” (“Programa tu futuro”) 
+                sponsored by the governmental of Buenos Aires. My project, a mobile app to promote 
+                the cultural event of the city, won the 2nd prize.
+
+                My other passions are my family, photography and the fight against 
+                climate change. I started my own personal photography blog, Light, in 
+                2019, to share the world through my eyes.
+
+                <strong>Thank you!</strong>
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}

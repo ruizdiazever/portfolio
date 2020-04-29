@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    {% load bootstrap4 %}
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title %} {% endblock %} | Ever</title>
+
+    <!-- Boostrap -->
+    {% load bootstrap4 %}
+    {% bootstrap_css %}
+
+    <!-- Fontawesone -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- Estilos -->
+    <link href="{% static 'core/css/styles.css' %}" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navegacion -->
+    {% include 'core/navigation.html' %}
+
+    <!-- Contenido principal -->
+    {% block content %}{% endblock %}
+
+    <!-- Footer -->
+    {% include 'core/footer.html' %}
+
+    <!-- Boostrap -->
+    {% bootstrap_javascript jquery='full' %}
+
+    <!-- Diagrams -->
+    <script type="text/javascript" src="https://app.diagrams.net/js/viewer.min.js"></script>
+</body>
+</html>
