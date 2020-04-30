@@ -2,6 +2,7 @@
 
 <nav class="navbar navbar-expand-md navbar-dark">
     <div class="container">
+
         <a href="{% url 'home' %}" class="navbar-brand"><img src="{% static 'core/img/logo.png' %}" title="Logo"></a>
 
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#testNavbar">
@@ -15,6 +16,8 @@
                 <li class="nav-item"><a class="nav-link blockquote mt-4" href="#">Contact</a></li>
                 <li class="nav-item"><a class="nav-link blockquote mt-4" href="{% url 'about' %}">About</a></li>
             </ul>
+
+            <button id="dashboard" title="Dashboard" type="button" class="btn btn-grey">&#128013;</button>
         </div>
     </div>
 </nav>
