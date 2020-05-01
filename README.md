@@ -11,10 +11,13 @@ Second version of my personal page, is designed and developed with:
 >- JQuery
 
 **As features it has:** 
-- Dynamic template injection.
-- Ckeditor.
-- Mkdocs.
-- Ordering in projects.
-- Loading of projects in "Portfolio" with database through Django's administrator.
+- Dynamic template injection
+- Projects app
+- About app
+- ORM of Django
+- Ckeditor
+- Mkdocs
+- Ordering in projects
+- Loading of projects in "Portfolio" with database through Django's administrator
 
 **Ever Ruiz Diaz**, *Software Student* - [This web](http://everdev.pythonanywhere.com/)
