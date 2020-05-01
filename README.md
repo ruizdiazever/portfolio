@@ -12,12 +12,16 @@ Second version of my personal page, is designed and developed with:
 
 **As features it has:** 
 - Dynamic template injection
+- Models
+- ORM of Django
 - Projects app
 - About app
-- ORM of Django
+- Advanced admin fields
 - Ckeditor
 - Mkdocs
-- Ordering in projects
+- Order filters
+- Filter | Linebreaks
+- Filter | Safe
 - Loading of projects in "Portfolio" with database through Django's administrator
 
 **Ever Ruiz Diaz**, *Software Student* - [This web](http://everdev.pythonanywhere.com/)
