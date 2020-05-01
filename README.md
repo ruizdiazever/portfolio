@@ -24,4 +24,4 @@ Second version of my personal page, is designed and developed with:
 - Filter | Safe
 - Loading of projects in "Portfolio" with database through Django's administrator
 
-**Ever Ruiz Diaz**, *Software Student* - [This portfolio](http://everdev.pythonanywhere.com/)
+**Ever Ruiz Diaz**, *Software Student* - [Portfolio](http://everdev.pythonanywhere.com/)
