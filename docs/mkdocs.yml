@@ -4,5 +4,6 @@ nav:
     - Projects: projects.md
     - Contact: contact.md
     - About: about.md
+    - Tools: tools.md
 theme:
   name: material
