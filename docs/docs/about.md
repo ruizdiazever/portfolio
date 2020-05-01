@@ -11,7 +11,7 @@ about/
                         |--about.html
 ```
 
-2- admin.py
+2- Registramos nuestra app en el dasboard de Django con ```admin.py```
 ```python
 from django.contrib import admin
 
@@ -26,7 +26,7 @@ class AboutAdmin(admin.ModelAdmin):
 admin.site.register(About, AboutAdmin) 
 ```
 
-2- apps.py
+2- Registramos un nombre publico con ``` apps.py```
 ```python
 from django.apps import AppConfig
 
@@ -35,7 +35,7 @@ class AboutConfig(AppConfig):
     verbose_name = 'Sobre mi' # Nombre publico, @Ever
 ```
 
-3- models.py
+3- Creamos nuestro model con el ORM de Django con ```models.py```
 ```python
 from django.db import models
 
@@ -60,7 +60,7 @@ class About(models.Model):
         return self.title
 ```
 
-4- urls.py
+4- Declaramos nuestras urls en ```urls.py```
 ```python
 # Importamos path
 from django.urls import path 
@@ -73,7 +73,7 @@ urlpatterns = [
 ]
 ```
 
-5- views.py
+5- Creamos nuestra vista en ```views.py```
 ```python
 from django.shortcuts import render
 from .models import About
@@ -83,4 +83,27 @@ def about(request):
     about = About.objects.all()
     # Clave valor para iterar..
     return render(request, 'about/about.html', {'about':about})
+```
+
+5- Registramos nuestra app y sus configuraciones en  ```settings.py```
+```python
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'about.apps.AboutConfig', # ACA
+    'bootstrap4',
+    'ckeditor',
+    'core',
+    'projects',
+]
+```
+
+5- Otras configuraciones manuales en ```settings.py```, al final de la misma
+```python
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 ```
