@@ -34,6 +34,11 @@ body {
 .display-3 {
     text-align: center; color: #03DAC6;
 }
+#subheader {
+    text-align: center; color: white;
+}
+
+
 
 
 #header {

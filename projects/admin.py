@@ -1,3 +1,8 @@
 from django.contrib import admin
+from .models import Projects
 
-# Register your models here.
+class ProjectsAdmin(admin.ModelAdmin):
+    readonly_fields = ('created', 'updated')
+    list_display = ('title','ordering')
+
+admin.site.register(Projects, ProjectsAdmin)

@@ -1,17 +1,15 @@
 from django.contrib import admin
 from django.urls import path, include
-
-from core import views as views_core
-from projects import views as views_projects
-
 from django.conf import settings
-
+from core import views
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views_core.home, name='home'),
-    path('projects/', views_projects.projects, name='projects'),
+
+    path('', views.home, name='home'),
+    
+    path('projects/', include('projects.urls')),
     path('about/', include('about.urls'))
 ]
 

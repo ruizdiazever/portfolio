@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'bootstrap4',
     'ckeditor',
     'core',
-    'projects',
+    'projects.apps.ProjectsConfig',
 ]
 
 MIDDLEWARE = [
