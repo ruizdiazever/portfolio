@@ -14,4 +14,4 @@ Second version of my personal page, is designed and developed with:
 - Dynamic template injection.
 - Loading of projects in "Portfolio" with database through Django's administrator.
 
-**Ever Ruiz Diaz**, *Software Student* - [This web](http://sinconmasver.pythonanywhere.com/)
+**Ever Ruiz Diaz**, *Software Student* - [This web](http://everdev.pythonanywhere.com/)
