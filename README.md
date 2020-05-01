@@ -22,6 +22,6 @@ Second version of my personal page, is designed and developed with:
 - Order filters
 - Filter | Linebreaks
 - Filter | Safe
-- Loading of projects in "Portfolio" with database through Django's administrator
+- Loading of projects with Django's administrator
 
 **Ever Ruiz Diaz**, *Software Student* - [Portfolio](http://everdev.pythonanywhere.com/)
