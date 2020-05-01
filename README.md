@@ -28,7 +28,7 @@ Second version of my personal page, is designed and developed with:
 To set up the web it is necessary to install [Python](https://www.python.org/downloads/ ), some initial packages, create the environment and install the web app requirements:
 
 ```bash
-$ pip install pylint                # Installpylint
+$ pip install pylint                # Install pylint
 $ pip install virtualenv            # Install virtualenv
 $ virtualenv env                    # Create environment
 $ source env/bin/activate           # Activate environment
