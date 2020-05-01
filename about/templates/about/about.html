@@ -1,0 +1,21 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}About{% endblock %}
+
+{% block content %}
+    {% for i in about %}
+        <div class="container">
+            <div class="row my-5">
+                <div class="col-lg-3 col-md-4 offset-lg-1">
+                    <img class="img-fluid avatar rounded-circle" src="{{i.image.url}}" alt="">
+                </div>
+                <div class="col-lg-7 col-md-8 text-light">
+                    <h2 class="section-heading">{{i.title}}</h2>
+                    <p>{{i.content|safe}}</p>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}
