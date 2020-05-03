@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'bootstrap4',
     'ckeditor',
     'core',
+    'contact.apps.ContactConfig',
     'projects.apps.ProjectsConfig',
 ]
 

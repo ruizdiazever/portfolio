@@ -3,6 +3,8 @@ body {
 }
 
 
+
+
 /* Navigation */
 .navbar {
     background-color: #1E1E1E;
@@ -17,16 +19,6 @@ body {
     color: #FF0266;
 }
 
-#dashboard {
-    height: 41px;
-    width: 50px;
-    margin-left: 1%;
-    margin-top: 10px;
-    background-color: #03DAC6;
-    font-weight: bolder;
-    font-family: Roboto, sans-serif;
-    font-size: 20px;
-}
 
 
 
@@ -54,7 +46,23 @@ body {
 
 #header p {
     color: white;
-    margin-bottom: 50px;
+
+}
+
+
+
+
+/* Main */
+p {
+    font-family: "Roboto",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 2rem;
+}
+
+#rosalia {
+    max-width: 720px; 
+    margin: 0 auto;
 }
 
 

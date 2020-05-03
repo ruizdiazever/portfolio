@@ -7,18 +7,20 @@
 {% block content %}
     <div id="header">
         <h1 class="display-3">Projects</h1>
-        <h2 id= "subheader" class="display-5">Some of my completed projects</h2>
-        <p class="text-light text-center" style="margin-left: 25%; margin-right: 25%;">Websites have become the most powerful tool for communication. A website is a unique way to connect yourself with the world . Whether to create a website to share your passion for music or photography, inform people of your business, sell products, or any other reason there are no boundaries to what you can do.</p>
+        <h2 id="subheader" class="display-5">Some of my completed projects</h2>
+        <div id="rosalia">
+            <p class="text-light">Websites have become the most powerful tool for communication. A website is a unique way to connect yourself with the world . Whether to create a website to share your passion for music or photography, inform people of your business, sell products, or any other reason there are no boundaries to what you can do.</p>
+        </div>
     </div>
 
     {% for project in projects %}
         <div class="container">
-            <div class="row my-5">
+            <div class="row mb-5">
                 <div class="col-lg-3 col-md-4 offset-lg-1">
                     <img class="img-fluid avatar rounded-circle" src="{{project.image.url}}" alt="">
                 </div>
                 <div class="col-lg-7 col-md-8 text-light">
-                    <h2 class="section-heading">{{project.title}}</h2>
+                    <h1 class="section-heading">{{project.title}}</h1>
                     <p style="color: green;">{{project.state}}</p>
                     <p>{{project.description|safe}}</p>
                     {% if project.link %}
