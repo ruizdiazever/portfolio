@@ -86,11 +86,12 @@ footer {
 }
 
 #redes {
-    margin-top: 7px
+    margin-top: 10px
 }
 
 #redes ul {
-    padding-top: 35px;
+    padding-top: 37px;
+    padding-left: 0px;
 }
 
 div.copy {
