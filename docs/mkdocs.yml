@@ -6,4 +6,4 @@ nav:
     - About: about.md
     - Tools: tools.md
 theme:
-  name: material
+  name: bootstrap4
