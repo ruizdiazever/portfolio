@@ -22,14 +22,14 @@
                         <p class="text-white">Have a question on a current project, want to work together or just say hello? Contact me on Linkedin, Instagram, GitHub or use the contact form below.</p>
 
                         {% if 'ok' in request.GET %}
-                        <p><b>Su mensaje ha sido enviado correctamente!</b></p>
+                        <p><b>Your message has been sent successfully!</b></p>
                         {% endif %}
 
                         <form action="" method="POST">
                             {% csrf_token %}
 
                             <div class="form-group">
-                                <label>Nombre</label>
+                                <label>Name</label>
                                 <div class="input-group">
                                     {{formulario.name}}
                                 </div>
@@ -45,7 +45,7 @@
                             </div>
 
                             <div class="form-group">
-                                <label>Mensaje</label>
+                                <label>Message</label>
                                 <div class="input-group">
                                     {{formulario.content}}
                                 </div>
