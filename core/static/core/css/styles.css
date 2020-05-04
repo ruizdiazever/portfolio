@@ -1,25 +1,36 @@
+/* Fuentes */
+@font-face {
+    font-family: Euclid;
+    src: url('../fonts/EuclidFlex-Regular.otf')
+}
+
 body {
     background-color: #121212;
 }
-
-
 
 
 /* Navigation */
 .navbar {
     background-color: #1E1E1E;
 }
-
-.navbar-dark .navbar-nav .nav-link {
-    color: #f0f0f0;
+#navigation ul li a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
     font-family: Roboto, sans-serif;
 }
-
-.navbar-dark .navbar-nav .nav-link:hover {
-    color: #FF0266;
+#navigation ul li a:hover {
+    color: #B2B2B2;
+    transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out
 }
-
-
 
 
 /* Header */
@@ -30,26 +41,16 @@ body {
     text-align: center; color: white;
 }
 
-
-
-
 #header {
     margin-top: 70px;
     text-align: center;
     margin-bottom: 150px;
 }
 
-#header a:hover {
-    color: #FF0266;
-    text-decoration: none; 
-}
-
 #header p {
     color: white;
 
 }
-
-
 
 
 /* Main */
@@ -65,14 +66,25 @@ p {
     margin: 0 auto;
 }
 
-@media (max-width: 1200px){
-    .section-heading .section-heading-lower,
-    .section-heading .section-heading-under{
-    font-size: calc(1.525rem + 3.3vw);
-    }
+#stories{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: "Roboto",Helvetica,Arial,sans-serif;
+
 }
 
+#curriculum {
+    color: #FFFFFF;
+    font-family: Euclid;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    width: auto;
+}
 
+#year_blog {
+    color: #03DAC6;
+}
 
 /* Footer */
 footer {
@@ -104,7 +116,7 @@ body > footer > div.copy > p {
     font-size: small;
 }
 
-
+/* Hover footer */
 #redes ul a {
     font-family: Roboto, sans-serif;
     text-decoration: none;
@@ -119,7 +131,7 @@ body > footer > div.copy > p {
 }
 
 #redes ul a:hover {
-    color: #FF0266;
+    color: #B2B2B2;
     transition: all 0.5s ease-out;
     -moz-transition: all 0.5s ease-out;
     -ms-transition: all 0.5s ease-out;
