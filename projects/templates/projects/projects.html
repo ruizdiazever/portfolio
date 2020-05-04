@@ -24,7 +24,7 @@
                     <p style="color: green;">{{project.state}}</p>
                     <p>{{project.description|safe}}</p>
                     {% if project.link %}
-                        <a target="blank" href="{{project.link}}">More info</a>
+                        <a id="project_link" class="text-primary" target="blank" href="{{project.link}}">More info</a>
                     {% endif %}
                 </div>
             </div>
