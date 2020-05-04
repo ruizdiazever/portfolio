@@ -15,207 +15,27 @@
 
 <div id="rosalia" style="margin-bottom: 50px;">
         <p>
-            <h2 id="year_blog" class="text-center">2020</h2>
-            
-            <a id="stories" class="mx-5" href="#" style="display: flex; align-items: start;">
-                <span style="white-space: nowrap;"> 
-                <code>
-                    <time class="dt-published dt-updated" datetime="2018-07-28 00:00:00 +0000">
-                        Apr 02 
-                    </time>
-                </code>
-                    &nbsp;</span>
-                <span class="link__title">I start using Docker technology.</span>
-            </a>
+            {% for historia in blog %}
+                
+                <h2 id="year_blog" class="text-center">
+                    {% if historia.year != None %}
+                        {{historia.year}}
+                    {% endif %}
+                </h2>
+                
+                <a target="blank" id="stories" class="mx-5" href="{% if historia.link != None %} {{historia.link}} {% endif %}" style="display: flex; align-items: start;">
+                    <span style="white-space: nowrap;"> 
 
-            <a id="stories" class="mx-5" href="#" style="display: flex; align-items: start;">
-                <span style="white-space: nowrap;"> 
-                <code>
-                    <time class="dt-published dt-updated" datetime="2018-07-28 00:00:00 +0000">
-                        Mar 08
-                    </time>
-                </code>
-                    &nbsp;</span>
-                <span class="link__title">I start developing a web app for a coffee shop.</span>
-            </a>
+                    <code>
+                        <time class="dt-published dt-updated" datetime="{{historia.datetime}}">
+                            {{historia.text_time}}
+                        </time>
+                    </code>
+                        &nbsp;</span>
 
-            
-
-            <a id="stories" class="mx-5" href="#" style="display: flex; align-items: start;">
-                <span style="white-space: nowrap;"> 
-                <code>
-                    <time class="dt-published dt-updated" datetime="2018-07-28 00:00:00 +0000">
-                        Jan 17
-                    </time>
-                </code>
-                    &nbsp;</span>
-                <span class="link__title">My daughter Sofia is born, I am a father.</span>
-            </a>
-
-            <a id="stories" class="mx-5" href="#" style="display: flex; align-items: start;">
-                <span style="white-space: nowrap;"> 
-                <code>
-                    <time class="dt-published dt-updated" datetime="2018-07-28 00:00:00 +0000">
-                        Jan 04
-                    </time>
-                </code>
-                    &nbsp;</span>
-                <span class="link__title">I start to make my web portfolio with Django.</span>
-            </a>
-
-            <br>
-            <h2 id="year_blog" class="text-center">2019</h2>
-
-            <a id="stories" class="mx-5" href="#" style="display: flex; align-items: start;">
-                <span style="white-space: nowrap;"> 
-                <code>
-                    <time class="dt-published dt-updated" datetime="2018-07-28 00:00:00 +0000">
-                        Dec 04
-                    </time>
-                </code>
-                    &nbsp;</span>
-                <span class="link__title">I make my first web app, I name it Glow.</span>
-            </a>
-
-            <a id="stories" class="mx-5" href="#" style="display: flex; align-items: start;">
-                <span style="white-space: nowrap;"> 
-                <code>
-                    <time class="dt-published dt-updated" datetime="2018-07-28 00:00:00 +0000">
-                        Nov 21
-                    </time>
-                </code>
-                    &nbsp;</span>
-                <span class="link__title">I add Git to my life.</span>
-            </a>
-
-
-
-            <a id="stories" class="mx-5" href="#" style="display: flex; align-items: start;">
-                <span style="white-space: nowrap;"> 
-                <code>
-                    <time class="dt-published dt-updated" datetime="2018-07-28 00:00:00 +0000">
-                        Nov 19
-                    </time>
-                </code>
-                    &nbsp;</span>
-                <span class="link__title">I finish the layout of one of my first websites, HANNAH.</span>
-            </a>
-
-            <a id="stories" class="mx-5" href="#" style="display: flex; align-items: start;">
-                <span style="white-space: nowrap;"> 
-                <code>
-                    <time class="dt-published dt-updated" datetime="2018-07-28 00:00:00 +0000">
-                        Nov 15
-                    </time>
-                </code>
-                    &nbsp;</span>
-                <span class="link__title">I'm starting to think about what area to specialize in.</span>
-            </a>
-            
-
-            <a id="stories" class="mx-5" href="#" style="display: flex; align-items: start;">
-                <span style="white-space: nowrap;"> 
-                <code>
-                    <time class="dt-published dt-updated" datetime="2018-07-28 00:00:00 +0000">
-                        Sep 29
-                    </time>
-                </code>
-                    &nbsp;</span>
-                <span class="link__title">I learn to use Bootstrap 4 technology.</span>
-            </a>
-
-            <a id="stories" class="mx-5" href="#" style="display: flex; align-items: start;">
-                <span style="white-space: nowrap;"> 
-                <code>
-                    <time class="dt-published dt-updated" datetime="2018-07-28 00:00:00 +0000">
-                        Aug 28
-                    </time>
-                </code>
-                    &nbsp;</span>
-                <span class="link__title">I start a web backend programming course with Python using Django.</span>
-            </a>
-            
-            <a id="stories" class="mx-5" href="#" style="display: flex; align-items: start;">
-                <span style="white-space: nowrap;"> 
-                <code>
-                    <time class="dt-published dt-updated" datetime="2018-07-28 00:00:00 +0000">
-                        Aug 20
-                    </time>
-                </code>
-                    &nbsp;</span>
-                <span class="link__title">I decide to specialize in web development.</span>
-            </a>
-
-            <a id="stories" class="mx-5" href="#" style="display: flex; align-items: start;">
-                <span style="white-space: nowrap;"> 
-                <code>
-                    <time class="dt-published dt-updated" datetime="2018-07-28 00:00:00 +0000">
-                        Aug 13
-                    </time>
-                </code>
-                    &nbsp;</span>
-                <span class="link__title">I finish the Java course.</span>
-            </a>
-
-            <a id="stories" class="mx-5" href="#" style="display: flex; align-items: start;">
-                <span style="white-space: nowrap;"> 
-                <code>
-                    <time class="dt-published dt-updated" datetime="2018-07-28 00:00:00 +0000">
-                        Jul 07
-                    </time>
-                </code>
-                    &nbsp;</span>
-                <span class="link__title">I learn HTML5 and CSS in an autodidactic way.</span>
-            </a>
-
-            <br>
-            <h2 id="year_blog" class="text-center">2018</h2>
-
-            <a id="stories" class="mx-5" href="#" style="display: flex; align-items: start;">
-                <span style="white-space: nowrap;"> 
-                <code>
-                    <time class="dt-published dt-updated" datetime="2018-07-28 00:00:00 +0000">
-                        Oct 21
-                    </time>
-                </code>
-                    &nbsp;</span>
-                <span class="link__title">I start learning relational databases with MySQL.</span>
-            </a>
-
-            <a id="stories" class="mx-5" href="#" style="display: flex; align-items: start;">
-                <span style="white-space: nowrap;"> 
-                <code>
-                    <time class="dt-published dt-updated" datetime="2018-07-28 00:00:00 +0000">
-                        Aug 07
-                    </time>
-                </code>
-                    &nbsp;</span>
-                <span class="link__title">I started a Java 8 programming course.</span>
-            </a>
-
-            <br>
-            <h2 id="year_blog" class="text-center">2017</h2>
-            <a id="stories" class="mx-5" href="#" style="display: flex; align-items: start;">
-                <span style="white-space: nowrap;"> 
-                <code>
-                    <time class="dt-published dt-updated" datetime="2017-09-15 00:00:00 +0000">
-                        Sep 28
-                    </time>
-                </code>
-                    &nbsp;</span>
-                <span class="link__title">I was part of the development of an app, I was in charge of the design.</span>
-            </a>
-
-            <a id="stories" class="mx-5"  style="display: flex; align-items: start;">
-                <span style="white-space: nowrap;"> 
-                <code>
-                    <time class="dt-published dt-updated" datetime="2017-05-28 00:00:00 +0000">
-                        Jul 05
-                    </time>
-                </code>
-                    &nbsp;</span>
-                <span class="link__title">Hello World!</span>
-            </a>
+                    <span class="link__title">{{historia.title}}</span>
+                </a>
+            {% endfor %}
         </p>
     </div>
 {% endblock %}

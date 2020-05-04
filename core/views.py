@@ -1,8 +1,8 @@
 from django.shortcuts import render
-from portfolio import urls
-from about import urls
+from .models import Blog
 
 def home(request):
-    return render(request, 'core/home.html')
+    blog = Blog.objects.all()
+    return render(request, 'core/home.html', {'blog':blog})
 
 
