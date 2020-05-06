@@ -1,0 +1,82 @@
+@font-face {
+    font-family: elon;
+    src: url(../fonts/elon.ttf)
+}
+
+@font-face {
+    font-family: valve;
+    src: url(../fonts/valve.ttf)
+}
+
+@font-face {
+    font-family: valve2;
+    src: url(../fonts/valve_2.ttf)
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    color: black
+}
+
+#smartphone {
+    margin-top: 85px
+}
+
+#testimonial {
+    background: #f1f1f1;
+    padding: 20px 0 10px 0;
+    text-align: center;
+    margin-top: 40px
+}
+
+#navbarNav>ul>li.nav-item>a {
+    font-size: 22px;
+    padding: 20px
+}
+
+footer {
+    text-align: center;
+    line-height: center;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    position: static;
+    background-color: #f74843;
+    font-family: 'Inconsolata', monospace
+}
+
+#redes {
+    margin-top: 7px
+}
+
+#redes ul {
+    margin-bottom: 10px
+}
+
+div.copy {
+    margin-top: 0px;
+    color: black;
+    position: relative
+}
+
+#redes ul a {
+    font-family: elon, monospace;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 9px;
+    color: white;
+    transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in
+}
+
+#redes ul a:hover {
+    color: blue;
+    transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out
+}

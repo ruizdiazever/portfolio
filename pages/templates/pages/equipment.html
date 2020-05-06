@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Equipment | Ever</title>
+    {% load bootstrap4 %}{% bootstrap_css %}
+    <link rel="stylesheet" href="{% static 'core/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/equipment.css' %}">
+</head>
+
+<body>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark"></nav>
+        <div class="container">
+            <a style="margin-top: 20px;" title="Inicio" href="{% url 'home' %}"><img src="{% static 'core/img/logo.png' %}" title="Rerum System 0.1"
+                    alt="Aqui debe estar el logo" /></a>
+        </div>
+    </nav>
+
+    <section id="camera" class="mt-5">
+        <div class="container mt-5">
+            <div class="row mt-3">
+                <div class="col-md-6 my-auto">
+                    <h1>Sony Alpha A7R IV</h1>
+                    <p class="mt-1">Expresión a su máxima capacidad. La a7R IV mirrorless Full Frame de Sony revela
+                        una visión fotográfica
+                        cada vez más abrumadora, con una destreza expresiva que anteriormente solo se esperaba en
+                        cámaras de formato medio,
+                        con una velocidad abrumadora empacada en un cuerpo compacto. Mira cómo sus avances
+                        tecnológicos aumentan su productividad..</p>
+                    <a href="#" class="btn btn-outline-secondary btn-lg">Sitio web</a>
+                    <img src="{% static 'core/img/equipment/camera.jpg' %}" style="width: 100%;">
+                </div>
+                <div class="col-md-6">
+                    <div class="info-left">
+                        <img src="{% static 'core/img/equipment/camera_2.jpg' %}" style="width: 100%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include 'core/footer.html' %}
+    {% bootstrap_javascript jquery='full' %}
+    <script src="{% static 'core/js/scrollreveal.min.js' %}" charset="utf-8"></script>
+    <script src="{% static 'core/js/equipmentEffect.js' %}" charset="utf-8"></script>
+    <script src="{% static 'core/js/queryStrange.js' %}" charset="utf-8"></script>
+</body>
+</html>

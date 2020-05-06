@@ -3,24 +3,12 @@
 <head>
     {% load static %}
     {% load bootstrap4 %}
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}"/>
-
+    <link rel="shortcut icon" type="image/png" href="{% static 'core/img/favicon.ico' %}"/>
     <title>{% block title %} {% endblock %} | Ever</title>
-
-    <!-- Boostrap -->
-    {% load bootstrap4 %}
-    {% bootstrap_css %}
-
-    <!-- Fonts -->
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    {% load bootstrap4 %}{% bootstrap_css %}
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
-    <!-- Estilos -->
     <link href="{% static 'core/css/styles.css' %}" rel="stylesheet">
 </head>
 

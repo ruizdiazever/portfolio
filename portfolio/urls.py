@@ -11,9 +11,9 @@ urlpatterns = [
     
     path('projects/', include('projects.urls')),
     path('about/', include('about.urls')),
-    path('contact/', include('contact.urls'))
+    path('contact/', include('contact.urls')),
+    path('pages/', include('pages.urls'))
 ]
-
 
 if settings.DEBUG:
     from django.conf.urls.static import static

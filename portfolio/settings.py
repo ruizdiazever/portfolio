@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'core',
     'contact.apps.ContactConfig',
     'projects.apps.ProjectsConfig',
+    'pages',
 ]
 
 MIDDLEWARE = [
