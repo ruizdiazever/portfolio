@@ -20,7 +20,7 @@ Second version of my personal page, is designed and developed with:
 - Filter | Safe
 - Loading of projects with Django's administrator
 
-## Deployment🤖
+## Requirements🤖
 To set up the web it is necessary to install [Python](https://www.python.org/downloads/ ), some initial packages, create the environment and install the web app requirements:
 
 ```bash
