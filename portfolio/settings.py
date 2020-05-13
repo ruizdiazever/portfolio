@@ -127,11 +127,13 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 
-
 # Configuracion manual
+
 MEDIA_URL = '/media/'
 
+
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+
 
 CKEDITOR_CONFIGS = {
     'default': {
@@ -144,3 +146,11 @@ CKEDITOR_CONFIGS = {
         ]
     }
 }
+
+
+# EMAIL CONFIG PARA UN SERVER COMO MAILTRAP
+
+EMAIL_HOST = 'smtp.mailtrap.io'
+EMAIL_HOST_USER = '539c0129b5a1b1'
+EMAIL_HOST_PASSWORD = '114bf0dd92be9d'
+EMAIL_PORT = '2525'
