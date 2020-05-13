@@ -24,7 +24,11 @@ def contact(request):
             try:
                 email.send()
                 return redirect(reverse('contact',)+'?ok')
-            except:
-                return redirect(reverse('contact',)+'?fail')
+            except Exception as e:
+                print("Error")
+                print(type(e).__name__)
+                a = type(e).__name__
+                return redirect(reverse('contact',)+'?fail'+"/"+a)
+            
 
     return render(request, "contact/contact.html", {'formulario':contact_form})
