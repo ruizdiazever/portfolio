@@ -154,3 +154,19 @@ EMAIL_HOST = 'smtp.mailtrap.io'
 EMAIL_HOST_USER = '539c0129b5a1b1'
 EMAIL_HOST_PASSWORD = '114bf0dd92be9d'
 EMAIL_PORT = '2525'
+
+
+# PASSWORD POR CONSOLA
+
+#from getpass import getpass
+#password = getpass("Ingrese su contraseña de email: ")
+
+
+# EMAIL CONFIG PARA GMAIL
+
+#EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+#EMAIL_HOST = 'smtp.gmail.com'
+#EMAIL_USE_TLS=True
+#EMAIL_PORT = 587
+#EMAIL_HOST_USER = 'ruizdiaz.oe@gmail.com'
+#EMAIL_HOST_PASSWORD = password

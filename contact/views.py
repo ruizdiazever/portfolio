@@ -30,5 +30,4 @@ def contact(request):
                 a = type(e).__name__
                 return redirect(reverse('contact',)+'?fail'+"/"+a)
             
-
     return render(request, "contact/contact.html", {'formulario':contact_form})
