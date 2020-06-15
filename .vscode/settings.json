@@ -1,4 +1,4 @@
 {
-    "python.pythonPath": "C:\\venv\\portfolio\\Scripts\\python.exe",
+    "python.pythonPath": "C:\\env\\portfolio\\Scripts\\python.exe",
     "python.jediEnabled": true,
 }
