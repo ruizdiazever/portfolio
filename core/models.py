@@ -14,7 +14,23 @@ class Blog(models.Model):
 
     class Meta:
         verbose_name = "Blog"
-        verbose_name_plural = "Blogs"
+        verbose_name_plural = "Blog"
+        ordering = ['-ordering','created']
+    
+    def __str__(self):
+        return self.title
+
+class Certificates(models.Model):
+    title = models.TextField(verbose_name="Titulo", blank=True)
+    image = models.ImageField(upload_to="certifications", verbose_name="Imagen", null=True, blank=True)
+    link = models.URLField(null=True, blank=True)
+    ordering = FloatField(verbose_name='Orden', default=0)
+    created = models.DateTimeField(auto_now_add=True, verbose_name='Fecha de creación')
+    updated = models.DateTimeField(auto_now=True, verbose_name='Fecha de actualización')
+
+    class Meta:
+        verbose_name = "Certificate"
+        verbose_name_plural = "Certificates"
         ordering = ['-ordering','created']
     
     def __str__(self):

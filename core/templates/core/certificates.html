@@ -1,0 +1,13 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}Certifications{% endblock %}
+
+{% block content %}
+    {% for c in certificates %}
+        <div class="container">
+            <a href="{{c.link}}" target="_blank">
+                <img src="{{c.image.url}}" class="img-fluid my-5" title="{{c.title}}">
+            </a>
+        </div>
+    {% endfor %}
+{% endblock %}
