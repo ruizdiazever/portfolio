@@ -27,28 +27,54 @@
 </div>
 
 <div id="rosalia" style="margin-bottom: 50px;">
-        <p>
-            {% for historia in blog %}
-                
-                <h2 id="year_blog" class="text-center">
-                    {% if historia.year != None %}
-                        {{historia.year}}
-                    {% endif %}
-                </h2>
-                
-                <a target="blank" id="stories" class="mx-5" href="{% if historia.link != None %} {{historia.link}} {% endif %}" style="display: flex; align-items: start;">
-                    <span style="white-space: nowrap;"> 
+    <p>
+        {% for elemento in blog %}
+            
+            <h2 id="year_blog" class="text-center">
+                {% if elemento.year != None %}
+                    {{elemento.year}}
+                {% endif %}
+            </h2>
+            
+            <a type="button" data-toggle="modal" data-target="#{{elemento.subtitle}}" target="blank" id="stories" type="button" class="mx-5" href="{% if elemento.link != None %} {{elemento.link}} {% endif %}" style="display: flex; align-items: start;">
+                <span style="white-space: nowrap;"> 
 
-                    <code>
-                        <time class="dt-published dt-updated" datetime="{{historia.datetime}}">
-                            {{historia.text_time}}
-                        </time>
-                    </code>
-                        &nbsp;</span>
+                <code>
+                    <time class="dt-published dt-updated" datetime="{{elemento.datetime}}">
+                        {{elemento.text_time}}
+                    </time>
+                </code>
+                    &nbsp;</span>
 
-                    <span class="link__title">{{historia.title}}</span>
-                </a>
-            {% endfor %}
-        </p>
-    </div>
+                <span class="link__title">{{elemento.title}}</span>
+                
+            </a>
+        {% endfor %}
+    </p>
+
+    {% for elemento in blog %}
+        <!-- Modal -->
+        <div class="modal fade" id="{{elemento.subtitle}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                <div class="modal-content" style="background-color: #121212;">
+                    <div class="modal-header text-light" style="background-color: #1E1E1E; border-style: none;">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">{{elemento.subtitle}}</h5>
+                        <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-light">
+                        {{elemento.description}}
+                        <br><br>
+                        <a href="{% if elemento.link != None %} {{elemento.link}} {% endif %}" target="blank"> More info.</a>
+                    </div>
+                    <div class="modal-footer" style="background-color: #1E1E1E; border-style: none;">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor%}
+
+</div>
 {% endblock %}
