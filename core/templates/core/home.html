@@ -5,76 +5,66 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
-<div id="header" style="margin-bottom: 50px !important;">
-    <h1 class="display-3">Skills and Blog</h1>
-    <p>Hi, I'm Ever. I am a Web Developer.<br>
-    Here you can see a bit of my journey into this beautiful world.</p>
+    <div id="header" style="margin-bottom: 50px !important;">
+        <h1 class="display-3">Skills and Blog</h1>
+        <p>Hi, I'm Ever. I am a Web Developer.<br>
+        Here you can see a bit of my journey into this beautiful world.</p>
 
-    <button type="button" class="btn btn-success btn-lg"><a id= "curriculum" href="{% static 'core/docs/curriculum.pdf' %}" target="_blank">Curriculum</a></button> 
+        <button type="button" class="btn btn-success btn-lg"><a id= "curriculum" href="{% static 'core/docs/curriculum.pdf' %}" target="_blank">Curriculum</a></button> 
 
-
-    <button type="button" class="btn btn-primary btn-lg" title="Certifications">
-        <a id= "curriculum" href="{% url 'certifications' %}">
-            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-patch-check" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M10.273 2.513l-.921-.944.715-.698.622.637.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636a2.89 2.89 0 0 1 4.134 0l-.715.698a1.89 1.89 0 0 0-2.704 0l-.92.944-1.32-.016a1.89 1.89 0 0 0-1.911 1.912l.016 1.318-.944.921a1.89 1.89 0 0 0 0 2.704l.944.92-.016 1.32a1.89 1.89 0 0 0 1.912 1.911l1.318-.016.921.944a1.89 1.89 0 0 0 2.704 0l.92-.944 1.32.016a1.89 1.89 0 0 0 1.911-1.912l-.016-1.318.944-.921a1.89 1.89 0 0 0 0-2.704l-.944-.92.016-1.32a1.89 1.89 0 0 0-1.912-1.911l-1.318.016z"/>
-                <path fill-rule="evenodd" d="M10.354 6.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
-            </svg>
-        </a>
-    </button>
-    
-
-    
-</div>
-
-<div id="rosalia" style="margin-bottom: 50px;">
-    <p>
-        {% for elemento in blog %}
-            
-            <h2 id="year_blog" class="text-center">
-                {% if elemento.year != None %}
-                    {{elemento.year}}
-                {% endif %}
-            </h2>
-            
-            <a type="button" data-toggle="modal" data-target="#{{elemento.subtitle}}" target="blank" id="stories" type="button" class="mx-5" href="{% if elemento.link != None %} {{elemento.link}} {% endif %}" style="display: flex; align-items: start;">
-                <span style="white-space: nowrap;"> 
-
-                <code>
-                    <time class="dt-published dt-updated" datetime="{{elemento.datetime}}">
-                        {{elemento.text_time}}
-                    </time>
-                </code>
-                    &nbsp;</span>
-
-                <span class="link__title">{{elemento.title}}</span>
-                
+        <button type="button" class="btn btn-primary btn-lg" title="Certifications">
+            <a id= "curriculum" href="{% url 'certifications' %}">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-patch-check" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10.273 2.513l-.921-.944.715-.698.622.637.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636a2.89 2.89 0 0 1 4.134 0l-.715.698a1.89 1.89 0 0 0-2.704 0l-.92.944-1.32-.016a1.89 1.89 0 0 0-1.911 1.912l.016 1.318-.944.921a1.89 1.89 0 0 0 0 2.704l.944.92-.016 1.32a1.89 1.89 0 0 0 1.912 1.911l1.318-.016.921.944a1.89 1.89 0 0 0 2.704 0l.92-.944 1.32.016a1.89 1.89 0 0 0 1.911-1.912l-.016-1.318.944-.921a1.89 1.89 0 0 0 0-2.704l-.944-.92.016-1.32a1.89 1.89 0 0 0-1.912-1.911l-1.318.016z"/>
+                    <path fill-rule="evenodd" d="M10.354 6.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                </svg>
             </a>
-        {% endfor %}
-    </p>
+        </button>
+    </div>
 
-    {% for elemento in blog %}
-        <!-- Modal -->
-        <div class="modal fade" id="{{elemento.subtitle}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
-                <div class="modal-content" style="background-color: #121212;">
-                    <div class="modal-header text-light" style="background-color: #1E1E1E; border-style: none;">
-                        <h5 class="modal-title" id="exampleModalCenterTitle">{{elemento.subtitle}}</h5>
-                        <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body text-light">
-                        {{elemento.description}}
-                        <br><br>
-                        <a href="{% if elemento.link != None %} {{elemento.link}} {% endif %}" target="blank"> More info.</a>
-                    </div>
-                    <div class="modal-footer" style="background-color: #1E1E1E; border-style: none;">
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+    <div id="rosalia" style="margin-bottom: 50px;">
+        <p>
+            {% for elemento in blog %}
+                <h2 id="year_blog" class="text-center">
+                    {% if elemento.year != None %}
+                        {{elemento.year}}
+                    {% endif %}
+                </h2>
+                
+                <a type="button" data-toggle="modal" data-target="#{{elemento.subtitle}}" target="blank" id="stories" type="button" class="mx-5" href="{% if elemento.link != None %} {{elemento.link}} {% endif %}" style="display: flex; align-items: start;">
+                    <span style="white-space: nowrap;"> 
+                    <code>
+                        <time class="dt-published dt-updated" datetime="{{elemento.datetime}}">
+                            {{elemento.text_time}}
+                        </time>
+                    </code>
+                        &nbsp;</span>
+                    <span class="link__title">{{elemento.title}}</span>
+                </a>
+
+                <!-- Modal -->
+                <div class="modal fade" id="{{elemento.subtitle}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                        <div class="modal-content" style="background-color: #121212;">
+                            <div class="modal-header text-light" style="background-color: #1E1E1E; border-style: none;">
+                                <h5 class="modal-title" id="exampleModalCenterTitle">{{elemento.subtitle}}</h5>
+                                <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body text-light">
+                                {{elemento.description|safe}}
+                                <br><br>
+                                <a href="{% if elemento.link != None %} {{elemento.link}} {% endif %}" target="blank"> More info.</a>
+                            </div>
+                            <div class="modal-footer" style="background-color: #1E1E1E; border-style: none;">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    {% endfor%}
 
-</div>
+            {% endfor %}
+        </p>
+    </div>
 {% endblock %}
