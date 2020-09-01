@@ -32,6 +32,7 @@ def contact(request):
                 a = type(e).__name__
                 messages.error(request, 'Rayos, algo se rompio.')
                 return redirect(reverse('contact',)+'?fail'+"/"+a)
+                messages.error(request, 'Rayos, algo se rompio.')
 
             
     return render(request, "contact/contact.html", {'formulario':contact_form})
