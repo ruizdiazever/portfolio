@@ -20,11 +20,7 @@
                 <div class="col-xl-9 col-lg-10 mx-auto">
                     <div class="bg-faded rounded p-5">
                         <p class="text-white">Have a question on a current project, want to work together or just say hello? Contact me on Linkedin, Instagram, GitHub or use the contact form below.</p>
-
-                        {% if 'ok' in request.GET %}
-                        <p style="color: #03DAC6;"><b>Your message has been sent successfully!</b></p>
-                        {% endif %}
-
+                        {% include 'contact/messages.html' %}
                         <form action="" method="POST">
                             {% csrf_token %}
 

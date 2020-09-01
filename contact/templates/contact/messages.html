@@ -1,0 +1,20 @@
+<!-- Subtemplate -->
+{% for message in messages %}
+    {% if message.tags == 'success' %}
+        <div class="alert alert-success alert-dismissible text-center fade show" role="alert">  
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
+            <strong>{{ message }}</strong> We'll talk to you soon, thanks!
+            <div class="icon hidden-xs">
+                <i class="fa fa-check-circle"></i>
+            </div>
+        </div>
+    {% elif message.tags == 'danger' %}
+        <div class="alert alert-danger alert-dismissible text-center fade show" role="alert">  
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
+            <strong>{{ message }}</strong> ...intente nuevamente.
+            <div class="icon hidden-xs">
+                <i class="fa fa-times-circle"></i>
+            </div>
+        </div>
+    {% endif %}
+{% endfor %}
