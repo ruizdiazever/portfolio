@@ -30,7 +30,7 @@ def contact(request):
                 print("Error")
                 print(type(e).__name__)
                 a = type(e).__name__
-                messages.error(request, 'Rayos, algo se rompio.')
+                messages.error(request, 'Rayos, something is wrong')
             return redirect(reverse('contact',)+'?fail'+"/"+a)
 
             
