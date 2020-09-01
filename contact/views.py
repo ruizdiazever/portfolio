@@ -30,9 +30,9 @@ def contact(request):
                 print("Error")
                 print(type(e).__name__)
                 a = type(e).__name__
+            except:
                 messages.error(request, 'Rayos, algo se rompio.')
                 return redirect(reverse('contact',)+'?fail'+"/"+a)
-                messages.error(request, 'Rayos, algo se rompio.')
 
             
     return render(request, "contact/contact.html", {'formulario':contact_form})
