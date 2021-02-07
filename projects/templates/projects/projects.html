@@ -2,32 +2,39 @@
 
 {% load static %}
 
-{% block title %}Projects{% endblock %}
+{% block title %}Projects - {% endblock %}
 
 {% block content %}
     <div id="header">
         <h1 class="display-3">Projects</h1>
-        <h2 id="subheader" class="display-5">Some of my completed projects</h2>
+        <h2 id="subheader">Some of my completed projects.</h2>
         <div id="rosalia">
-            <p class="text-light">Websites have become the most powerful tool for communication. A website is a unique way to connect yourself with the world . Whether to create a website to share your passion for music or photography, inform people of your business, sell products, or any other reason there are no boundaries to what you can do.</p>
+            <p class="text-light">Websites have become the most powerful tool for communication.</p>
         </div>
     </div>
 
-    {% for project in projects %}
-        <div class="container">
-            <div class="row mb-5">
-                <div class="col-lg-3 col-md-4 offset-lg-1">
-                    <img class="img-fluid avatar rounded-circle" src="{{project.image.url}}" alt="">
+    <div class="container">
+        <div class="row">
+            {% for project in projects %}
+                <div class="card-deck mb-5 mx-auto" style="width:30%;">
+                    <div class="card">
+                            <img id="sky" src="{{project.image.url}}" class="card-img-top" title="{{project.title}}">
+        
+                            <div class="card-body">
+                                <h5 class="card-title text-info">{{project.title}}</h5>
+                                <p class="text-white">{{project.subtitle}}</p>
+                                <hr style="border-color: #EEECEC;">
+                                <p class="text-white"><small>{{project.staff}}</small></p>
+                            </div>
+
+                            {% if project.link != None %}
+                                <a href="{{project.link}}" target="blank" class="text-center mb-3"><img style="max-width: 25px;" src="{% static 'core/img/github.png' %}" title="GitHub"></a>
+                            {% endif %}
+                            
+                            
+                    </div>
                 </div>
-                <div class="col-lg-7 col-md-8 text-light">
-                    <h1 class="section-heading">{{project.title}}</h1>
-                    <p style="color: green;">{{project.state}}</p>
-                    <p>{{project.description|safe}}</p>
-                    {% if project.link %}
-                        <a id="project_link" class="text-primary" target="blank" href="{{project.link}}">More info</a>
-                    {% endif %}
-                </div>
-            </div>
+            {% endfor %}
         </div>
-    {% endfor %}
+    </div>
 {% endblock %}

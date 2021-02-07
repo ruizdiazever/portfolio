@@ -42,9 +42,9 @@ body {
 }
 
 #header {
-    margin-top: 70px;
+    margin-top: 3%;
+    margin-bottom: 2%;
     text-align: center;
-    margin-bottom: 150px;
 }
 
 #header p {
@@ -56,8 +56,7 @@ body {
 /* Main */
 p {
     font-family: "Roboto",Helvetica,Arial,sans-serif;
-    font-weight: 400;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     line-height: 2rem;
 }
 
@@ -73,30 +72,6 @@ p {
 
 }
 
-#curriculum {
-    color: #FFFFFF;
-    text-decoration: none;
-    font-family: Euclid;
-    font-size: 1.25rem;
-    font-weight: 600;
-    line-height: 1.5rem;
-    width: auto;
-
-    transition: all 0.5s ease-in;
-    -moz-transition: all 0.5s ease-in;
-    -ms-transition: all 0.5s ease-in;
-    -o-transition: all 0.5s ease-in;
-    -webkit-transition: all 0.5s ease-in
-}
-
-#curriculum:hover {
-    color: #B2B2B2;
-    transition: all 0.5s ease-out;
-    -moz-transition: all 0.5s ease-out;
-    -ms-transition: all 0.5s ease-out;
-    -o-transition: all 0.5s ease-out;
-    -webkit-transition: all 0.5s ease-out
-}
 
 #year_blog {
     color: #03DAC6;
@@ -191,4 +166,14 @@ body > footer > div.copy > p {
     -ms-transition: all 0.5s ease-out;
     -o-transition: all 0.5s ease-out;
     -webkit-transition: all 0.5s ease-out
+}
+
+.card{
+    background-color: #1E1E1E;
+}
+
+
+button{
+    border-radius:10px;
+    outline:none;
 }

@@ -2,24 +2,23 @@
 
 {% load static %}
 
-{% block title %}Contact{% endblock %}
+{% block title %}Contact - {% endblock %}
 
 {% block content %}
-<div id="header" style="max-height: 50px;">
+<div id="header">
     <h1 class="display-3">Contact</h1>
-    <p style="margin-bottom: 0px !important;"><span class="subheading">If you want to go fast, go alone. If you want to
-            go far, go together!</span></p>
-    <p style="margin-top: 0px !important;"><small>African Proverb</small></p>
+    <h2 id="subheader">Want to work together or just say hello?</h2>
+    <p style="margin-bottom: 0px !important;"><span class="subheading">If you want to go fast, go alone. If you want togo far, go together!</span></p>
+    <p style="margin-top: 0px !important;" class="text-secondary"><small>African Proverb</small></p>
 </div>
 
-<section class="page-section text-white mb-5">
+<section class="page-section text-white">
     <div class="container">
         <!-- <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="{% static 'core/img/contact.jpg' %}" alt=""> -->
         <div class="content">
             <div class="row">
                 <div class="col-xl-9 col-lg-10 mx-auto">
                     <div class="bg-faded rounded p-5">
-                        <p class="text-white">Have a question on a current project, want to work together or just say hello? Contact me on Linkedin, Instagram, GitHub or use the contact form below.</p>
                         {% include 'contact/messages.html' %}
                         <form action="" method="POST">
                             {% csrf_token %}
@@ -49,7 +48,7 @@
                             </div>
 
                             <div class="text-center">
-                                <input type="submit" class="btn btn-primary btn-block py-2" value="Enviar">
+                                <input type="submit" class="btn btn-primary btn-block py-2" value="Send">
                             </div>
                         </form>
                     </div>

@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "C:\\env\\portfolio\\Scripts\\python.exe",
+    "python.pythonPath": "/home/ever/env/portfolio/bin/python3.9",
     "python.jediEnabled": false,
     "python.languageServer": "Jedi",
 }

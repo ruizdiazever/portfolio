@@ -6,7 +6,8 @@ from ckeditor.fields import RichTextField
 class Projects(models.Model):
     image = models.ImageField(upload_to="projects", verbose_name="Imagen", null=True, blank=True)
     title = models.CharField(max_length=50, verbose_name="Titulo")
-    state = models.CharField(max_length=50, verbose_name="Estado")
+    subtitle = models.CharField(max_length=50, verbose_name="Subtitulo", null=True)
+    staff = models.CharField(max_length=120, verbose_name="Staff tecnologico", null=True)
     description = RichTextField(verbose_name="Descripcion")
     link = models.URLField(null=True, blank=True)
     ordering = SmallIntegerField(verbose_name='Orden', default=0)
