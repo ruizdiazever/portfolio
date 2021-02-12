@@ -6,19 +6,19 @@
 
 {% block content %}
 <div id="header">
-    <h1 class="display-3">Contact</h1>
+    <h1 id="supertitle" class="display-3 pt-4">Contact</h1>
     <h2 id="subheader">Want to work together or just say hello?</h2>
-    <p style="margin-bottom: 0px !important;"><span class="subheading">If you want to go fast, go alone. If you want togo far, go together!</span></p>
+    <p id="superp" style="margin-bottom: 0px !important;"><span class="subheading">If you want to go fast, go alone. If you want togo far, go together!</span></p>
     <p style="margin-top: 0px !important;" class="text-secondary"><small>African Proverb</small></p>
 </div>
 
-<section class="page-section text-white">
+<section class="page-section text-white mb-5">
     <div class="container">
         <!-- <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="{% static 'core/img/contact.jpg' %}" alt=""> -->
         <div class="content">
             <div class="row">
                 <div class="col-xl-9 col-lg-10 mx-auto">
-                    <div class="bg-faded rounded p-5">
+                    <div class="bg-faded rounded p-3">
                         {% include 'contact/messages.html' %}
                         <form action="" method="POST">
                             {% csrf_token %}

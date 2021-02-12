@@ -5,9 +5,9 @@
 
 {% block content %}
     <div id="header" style="margin-bottom: 50px !important;">
-        <h1 class="display-3">Skills and Blog</h1>
-        <h2 id="subheader">Hi, I'm Ever.</h2>
-        <p>Here you can see a bit of my journey into this beautiful world.</p>
+        <h1 id="supertitle" class="display-3 pt-4">Skills and Blog</h1>
+        <h2 id="subheader">Hi, I'm Ever!</h2>
+        <p id="superp">Here you can see a bit of my journey into this beautiful world.</p>
         
 
         <a id= "curriculum" href="{% static 'core/docs/curriculum.pdf' %}" target="blank"><button type="button" class="btn btn-success btn-lg">Curriculum</button></a>
@@ -20,12 +20,16 @@
                     </svg>
             </button>
         </a>
+
+
+
     </div>
 
-    <div id="rosalia" style="margin-bottom: 50px;">
-        <p>
+    <div class="pb-5 container" id="rosalia">
+        <div>
             {% for elemento in blog %}
-                <h2 id="year_blog" class="text-center">
+            <div>
+                <h2 id="year_blog" class="text-center m-1">
                     {% if elemento.year != None %}
                         {{elemento.year}}
                     {% endif %}
@@ -41,17 +45,19 @@
                         &nbsp;</span>
                     <span class="link__title">{{elemento.title}}</span>
                 </a>
-
+    
                 <!-- Modal -->
                 <div class="modal fade" id="{{elemento.subtitle}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
                         <div class="modal-content" style="background-color: #121212;">
+    
                             <div class="modal-header text-light" style="background-color: #1E1E1E; border-style: none;">
                                 <h5 class="modal-title" id="exampleModalCenterTitle">{{elemento.subtitle}}</h5>
                                 <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
+    
                             <div class="modal-body text-light">
                                 {{elemento.description|safe}}
                                 <br><br>
@@ -60,11 +66,13 @@
                             <div class="modal-footer" style="background-color: #1E1E1E; border-style: none;">
                                 <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
                             </div>
+    
                         </div>
                     </div>
                 </div>
-
-            {% endfor %}
-        </p>
+            </div>
+        {% endfor %}
+        </div>
+        
     </div>
 {% endblock %}

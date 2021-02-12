@@ -1,0 +1,29 @@
+#supertitle{
+    font-size: xx-large;
+}
+
+#subheader{
+    font-size: x-large;
+}
+
+#superp{
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+#rosalia{
+    width: 95%;
+    margin: 0%;
+    margin-right: 0%;
+    text-align: left;
+    font-size: smaller;
+}
+
+
+#avatar{
+    width: 50%;
+}
+
+.nav.item{
+    height: 50px !important;
+}

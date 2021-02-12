@@ -10,12 +10,14 @@
         <div class="container">
             <div class="row my-5">
                 <div class="col-lg-3 col-md-4 offset-lg-1">
-                    <img class="img-fluid avatar rounded-circle" src="{{i.image.url}}" alt="">
+                    <img style="max-width: 210px; display: block; margin: auto;" class="img-fluid avatar rounded-circle mx-auto" src="{{i.image.url}}" alt="">
                 </div>
                 <div class="col-lg-7 col-md-8 text-light">
-                    <h1 class="display-3 text-left">{{i.title}}</h1>
-                    <h2 id="subheader" class="text-left">Developer student, human and father.</h2>    
-                    <p class="text-center">{{i.content|safe}}</p>
+                    <h1 id="supertitle" class="display-3 text-center mt-3">{{i.title}}</h1>
+                    <h2 id="subheader" class="text-left mb-5 text-center">Developer student, human and father.</h2>    
+                    <div class="mx-3">
+                        <p id="superp" class="text-center">{{i.content|safe}}</p>
+                    </div>
                 </div>
             </div>
         </div>
