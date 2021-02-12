@@ -11,7 +11,7 @@ body {
 
 /* Navigation */
 .navbar {
-    background-color: #1E1E1E;
+    background-color: #242526;
 }
 #testNavbar ul li a {
     text-decoration: none;
@@ -100,7 +100,7 @@ footer {
     height: 140px;
     bottom: 0;
     position: static;
-    background-color: #1E1E1E;
+    background-color: #242526;
 }
 
 #redes {
@@ -165,7 +165,7 @@ body > footer > div.copy > p {
 }
 
 .card{
-    background-color: #1E1E1E;
+    background-color: #242526;
 }
 
 
