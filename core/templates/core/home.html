@@ -29,7 +29,7 @@
         <div>
             {% for elemento in blog %}
             <div>
-                <h2 id="year_blog" class="text-center pl-5">
+                <h2 id="year_blog" class="text-center {% if elemento.year != None %} pt-3 {% endif %}">
                     {% if elemento.year != None %}
                         {{elemento.year}}
                     {% endif %}
