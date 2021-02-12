@@ -29,13 +29,13 @@
         <div>
             {% for elemento in blog %}
             <div>
-                <h2 id="year_blog" class="text-center m-1">
+                <h2 id="year_blog" class="text-left pl-5">
                     {% if elemento.year != None %}
                         {{elemento.year}}
                     {% endif %}
                 </h2>
                 
-                <a type="button" data-toggle="modal" data-target="#{{elemento.subtitle}}" target="blank" id="stories" type="button" class="mx-5" href="{% if elemento.link != None %} {{elemento.link}} {% endif %}" style="display: flex; align-items: start;">
+                <a class="text-left" type="button" data-toggle="modal" data-target="#{{elemento.subtitle}}" target="blank" id="stories" type="button" href="{% if elemento.link != None %} {{elemento.link}} {% endif %}" style="display: flex; align-items: start;">
                     <span style="white-space: nowrap;"> 
                     <code>
                         <time class="dt-published dt-updated" datetime="{{elemento.datetime}}">
