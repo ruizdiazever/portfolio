@@ -15,7 +15,7 @@
         <div class="row">
             {% for project in projects %}
                 <div class="card-deck mb-4 mx-auto" style="width: 350px;">
-                    <div class="card" style="background-color: #242526;">
+                    <div class="card rounded" style="background-color: #242526;" style="max-height:min-content;">
                         <img id="sky" src="{{project.image.url}}" class="card-img-top" title="{{project.title}}">
     
                         <div class="card-body">
@@ -26,7 +26,7 @@
                         </div>
 
                         {% if project.link != None %}
-                            <a href="{{project.link}}" target="blank" class="text-center mb-3"><img style="max-width: 25px;" src="{% static 'core/img/github.png' %}" title="GitHub"></a>
+                            <a href="{{project.link}}" target="blank" class="text-center mb-3"><img style="max-width: 25px;" src="{% static 'core/img/github.webp' %}" title="GitHub"></a>
                         {% endif %}  
                     </div>
                 </div>

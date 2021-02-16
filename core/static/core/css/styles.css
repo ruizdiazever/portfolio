@@ -113,8 +113,9 @@ footer {
 
 div.copy {
     padding-bottom: 1px;
-    color: gray;
-    position: relative
+    color: white;
+    position: relative;
+    font-size: 16px;
 }
 
 body > footer > div.copy > p {
@@ -126,7 +127,7 @@ body > footer > div.copy > p {
 #redes ul a {
     font-family: Roboto, sans-serif;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 16px;
     padding: 9px;
     color: white;
     transition: all 0.5s ease-in;
