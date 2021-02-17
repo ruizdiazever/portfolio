@@ -61,11 +61,19 @@ p {
 }
 
 
-#stories{
+.gordon{
     color: #FFFFFF;
-    text-decoration: none;
     font-family: "Roboto",Helvetica,Arial,sans-serif;
+    text-decoration: none !important;
+}
 
+#botoncito{
+    font-size: 18pt;
+    height: min-content;
+}
+
+#certibotoncito{
+    height: auto;
 }
 
 

@@ -1,9 +1,13 @@
+{% load static %}
+
 <footer class="col-md-12">
     <div id="redes">
         <ul style="padding-left: 0px !important;">
-            <a target="blank" href="https://www.linkedin.com/in/everdev/">Linkedln</a>
-            <a target="blank" href="https://github.com/ruizdiazever">GitHub</a>
-            <a target="blank" href="https://hub.docker.com/u/ruizdiazever/">Docker Hub</a>
+            <li>
+                <a target="blank" href="https://www.linkedin.com/in/everdev/"><img style="max-width: 25px;" src="{% static 'core/img/linkedin.webp' %}" title="LinkedIn"></a>
+                <a target="blank" href="https://github.com/ruizdiazever"><img style="max-width: 25px;" src="{% static 'core/img/github.webp' %}" title="GitHub"></a>
+                <a target="blank" href="https://hub.docker.com/u/ruizdiazever/"><img style="max-width: 25px;" src="{% static 'core/img/docker.webp' %}" title="Docker Hub"></a>
+            </li>
         </ul>
     </div>
     <div class="copy">
