@@ -27,3 +27,7 @@
 .nav.item{
     height: 50px !important;
 }
+
+#logo{
+    max-width: 110px !important;
+}
