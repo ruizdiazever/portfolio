@@ -55,9 +55,7 @@ body {
 
 /* Main */
 p {
-    font-family: "Roboto",Helvetica,Arial,sans-serif;
-    font-size: 1.1rem;
-    line-height: 2rem;
+    size: 16px;
 }
 
 
@@ -178,7 +176,9 @@ body > footer > div.copy > p {
 }
 
 
+
+/* Desactivar recuadro de boton cuando se presiona */
 button{
-    border-radius:10px;
-    outline:none;
+    border-radius:10px !important;
+    outline:none !important;
 }

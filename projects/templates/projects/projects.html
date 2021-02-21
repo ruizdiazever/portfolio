@@ -14,22 +14,62 @@
     <div class="container my-5">
         <div class="row">
             {% for project in projects %}
-                <div class="card-deck mb-4 mx-auto" style="width: 350px;">
-                    <div class="card rounded" style="background-color: #242526;" style="max-height:min-content;">
-                        <img id="sky" src="{{project.image.url}}" class="card-img-top" title="{{project.title}}">
-    
-                        <div class="card-body">
-                            <h3 class="card-title text-info">{{project.title}}</h3>
-                            <h4 class="text-white">{{project.subtitle}}</h4>
-                            <hr style="border-color: #EEECEC;">
-                            <p class="text-white"><small>{{project.staff}}</small></p>
+
+                <!-- Cards -->
+                <div class="card-deck mb-5 mx-auto" style="width: 350px; height: 380px;">
+                    <a href="#" title="{{project.title}}" style="text-decoration: none;" type="button" data-toggle="modal" data-target="#{{project.title}}">
+                        <div class="card rounded" style="background-color: #242526;" style="max-height:min-content;">
+                            <img id="sky" src="{{project.image.url}}" class="card-img-top" title="{{project.title}}">
+        
+                            <div class="card-body">
+                                <h3 class="card-title text-info">{{project.title}}</h3>
+                                <h4 class="text-white">{{project.subtitle}}</h4>
+                                <hr style="border-color: #EEECEC;">
+                                <p class="text-white"><small>{{project.staff|truncatewords_html:6}}</small></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="{{project.title}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content text-light" style="background-color: #242526;">
+                      <div class="modal-header" style="background-color: #242526;">
+                        <h2 style="color: #03dac6" class="modal-title" id="exampleModalLabel">{{project.title}}</h2>
+                        
+                        <button type="button" id="zeus" class="close" data-dismiss="modal" aria-label="Close" style="color: white;">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      
+
+                      <div class="modal-body" style="background-color: #121212;">
+
+                        <div class="px-1 pt-3">{{project.description|safe}}</div>
+
+                        <div class="pt-3">
+                          <h5 class="text-center" style="color: #03dac6;">Technology Staff</h5>
+                          <p class="text-secondary text-center"><small>{{project.staff}}</small></p>
                         </div>
 
-                        {% if project.link != None %}
-                            <a href="{{project.link}}" target="blank" class="text-center mb-3"><img style="max-width: 25px;" src="{% static 'core/img/github.webp' %}" title="GitHub"></a>
-                        {% endif %}  
+                        <div class="text-center pt-3">
+                          {% if project.link != None %}
+                            <a href="{{project.link}}" target="blank"><img style="max-width: 25px;" src="{% static 'core/img/github.webp' %}" title="GitHub"></a>
+                          {% endif %} 
+                        </div>
+                         
+                      </div>
+
+                      
+
+                      <div class="modal-footer" style="background-color: #242526;">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        {% comment %} <button type="button" class="btn btn-primary">Save changes</button> {% endcomment %}
+                      </div>
                     </div>
-                </div>
+                  </div>
+              </div>
             {% endfor %}
         </div>
     </div>
