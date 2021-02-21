@@ -25,7 +25,7 @@
                                 <h3 class="card-title text-info">{{project.title}}</h3>
                                 <h4 class="text-white">{{project.subtitle}}</h4>
                                 <hr style="border-color: #EEECEC;">
-                                <p class="text-white"><small>{{project.staff|truncatewords_html:6}}</small></p>
+                                <p class="text-white"><small>{{project.staff|truncatewords_html:5}}</small></p>
                             </div>
                         </div>
                     </a>
@@ -36,7 +36,7 @@
                   <div class="modal-dialog">
                     <div class="modal-content text-light" style="background-color: #242526;">
                       <div class="modal-header" style="background-color: #242526;">
-                        <h2 style="color: #03dac6" class="modal-title" id="exampleModalLabel">{{project.title}}</h2>
+                        <h2 style="color: #03dac6" class="modal-title" id="{{project.title}}">{{project.title}}</h2>
                         
                         <button type="button" id="zeus" class="close" data-dismiss="modal" aria-label="Close" style="color: white;">
                           <span aria-hidden="true">&times;</span>
