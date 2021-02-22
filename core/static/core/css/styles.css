@@ -4,8 +4,23 @@
     src: url('../fonts/EuclidFlex-Regular.otf')
 }
 
+html{
+    min-height: 100%;
+    position: relative;
+}
+
 body {
     background-color: #121212;
+    margin: 0;
+    margin-bottom: 150px;
+}
+
+#abajo {
+    background-color: #242526;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+   
 }
 
 
