@@ -7,18 +7,18 @@
 {% block content %}
 <div id="header">
     <h1 id="supertitle" class="display-3 pt-4">Contact</h1>
-    <h2 id="subheader">Want to work together or just say hello?</h2>
+    <h2 id="subheader" class="px-2">Want to work together or just say hello?</h2>
     <p id="superp" style="margin-bottom: 0px !important;"><span class="subheading">If you want to go fast, go alone. If you want togo far, go together!</span></p>
     <p style="margin-top: 0px !important;" class="text-secondary"><small>African Proverb</small></p>
 </div>
 
-<section class="page-section text-white mb-5">
+<section class="page-section text-white mb-5 pb-5">
     <div class="container">
         <!-- <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="{% static 'core/img/contact.jpg' %}" alt=""> -->
         <div class="content">
             <div class="row">
                 <div class="col-xl-9 col-lg-10 mx-auto">
-                    <div class="bg-faded rounded p-3">
+                    <div class="bg-faded rounded p-1">
                         {% include 'contact/messages.html' %}
                         <form action="" method="POST">
                             {% csrf_token %}
@@ -57,5 +57,4 @@
         </div>
     </div>
 </section>
-
 {% endblock %}
