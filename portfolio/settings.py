@@ -25,7 +25,7 @@ SECRET_KEY = 'ik$x5=07j*id0_cfy5y_bkf^hp)kgof%3o3273wn1n##nu_g2a'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['everdev.pythonanywhere.com', 'localhost:8080', '127.0.0.1']
+ALLOWED_HOSTS = ['everdev.pythonanywhere.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
