@@ -1,9 +1,6 @@
 site_name: Portfolio
 nav:
     - Home: index.md
-    - Projects: projects.md
-    - Contact: contact.md
-    - About: about.md
-    - Tools: tools.md
+    - Heroku Deployment: heroku.md
 theme:
-  name: bootstrap4
+  name: material
