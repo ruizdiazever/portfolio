@@ -1,5 +1,5 @@
 {
     "python.pythonPath": "/home/ever/env/portfolio/bin/python",
     "python.jediEnabled": false,
-    "python.languageServer": "Jedi",
+    "python.languageServer": "Pylance",
 }
