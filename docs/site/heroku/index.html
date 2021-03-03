@@ -9,19 +9,19 @@
       
       
       
-      <link rel="shortcut icon" href="assets/images/favicon.png">
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.3">
     
     
       
-        <title>Portfolio</title>
+        <title>Heroku Deployment - Portfolio</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.1655a90d.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.1655a90d.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.7fa14f5b.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.7fa14f5b.min.css">
         
       
     
@@ -58,7 +58,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#home" class="md-skip">
+        <a href="#django-web-app-deploy-to-heroku" class="md-skip">
           Skip to content
         </a>
       
@@ -71,7 +71,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Portfolio" class="md-header__button md-logo" aria-label="Portfolio">
+    <a href=".." title="Portfolio" class="md-header__button md-logo" aria-label="Portfolio">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -90,7 +90,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Heroku Deployment
             
           </span>
         </div>
@@ -154,7 +154,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Portfolio" class="md-nav__button md-logo" aria-label="Portfolio">
+    <a href=".." title="Portfolio" class="md-nav__button md-logo" aria-label="Portfolio">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -164,6 +164,21 @@
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
     
       
       
@@ -181,25 +196,60 @@
         
       
       
-      <a href="." class="md-nav__link md-nav__link--active">
-        Home
-      </a>
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Heroku Deployment
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="heroku/" class="md-nav__link">
+      <a href="./" class="md-nav__link md-nav__link--active">
         Heroku Deployment
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#primeros-pasos" class="md-nav__link">
+    Primeros pasos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preparacion-del-proyecto" class="md-nav__link">
+    Preparacion del proyecto
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#docker" class="md-nav__link">
+    Docker
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploy" class="md-nav__link">
+    Deploy
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -222,6 +272,42 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#primeros-pasos" class="md-nav__link">
+    Primeros pasos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preparacion-del-proyecto" class="md-nav__link">
+    Preparacion del proyecto
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#docker" class="md-nav__link">
+    Docker
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploy" class="md-nav__link">
+    Deploy
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -233,7 +319,58 @@
               
                 
                 
-                <h1 id="home">Home</h1>
+                <h1 id="django-web-app-deploy-to-heroku">Django web app deploy to Heroku</h1>
+<p>Documentacion para el deployment de una web app de Django previamente dockerizada para la plataforma Heroku con el metodo Container Registry de la misma.</p>
+<h2 id="primeros-pasos"><strong>Primeros pasos</strong></h2>
+<ul>
+<li>Registrarse en <a href="https://signup.heroku.com/"><strong>Heroku</strong></a></li>
+<li>Crear app en el <a href="https://dashboard.heroku.com/apps"><strong>Dasboard</strong></a></li>
+</ul>
+<h2 id="preparacion-del-proyecto"><strong>Preparacion del proyecto</strong></h2>
+<p><strong>En nuestro proyecto creamos los siguientes 3 archivos y añadimos a las mismas:</strong></p>
+<p><code>Procfile</code>, no lleva extension, agregamos la siguiente linea.</p>
+<pre><code>web: gunicorn docker_django_heroku.wsgi — log-file -
+</code></pre>
+<p><code>runtime.txt</code>, agregamos la versión de Python que deseamos para nuestro proyecto.</p>
+<pre><code>python-3.9.1
+</code></pre>
+<p><code>requirements.txt</code>, agregamos las librerias pip necesarias.</p>
+<pre><code>dj_database_url
+gunicorn
+django-heroku
+</code></pre>
+<p><strong>Editamos nuestro <code>Dockerfile</code> y agregamos lo siguiente al final</strong></p>
+<pre><code>CMD python manage.py runserver 0.0.0.0:$PORT
+</code></pre>
+<p><strong>La estructura de nuestro proyecto deberia ser algo parecido a esto:</strong></p>
+<pre><code class="language-code">📦webapp  
+    ┣ 📂webapp  
+    ┣ 📂core  
+    ┣ 📜docker-compose.yml  
+    ┣ 📜Dockerfile  
+    ┣ 📜manage.py  
+    ┣ 📜Procfile 
+    ┣ 📜requirements.txt  
+    ┗ 📜runtime.txt
+</code></pre>
+<h2 id="docker"><strong>Docker</strong></h2>
+<p><strong>Construimos nuestra imagen docker y la levantamos:</strong></p>
+<pre><code class="language-bash">$ sudo docker-compose -f docker-compose.yml build  # BUILD
+$ sudo docker-compose -f docker-compose.yml up -d  # UP
+$ sudo docker ps ls                                # CHECKING
+</code></pre>
+<h2 id="deploy"><strong>Deploy</strong></h2>
+<p><strong>En nuestro Dasboard vamos a la seccion "Deploy" y hacemos click sobre el metodo "Container Registry", instalamos "Heroku CLI". Una vez hecho esto volvemos a nuestro proyecto y con el bash en el proyecto procedemos con los siguientes comandos:</strong></p>
+<pre><code class="language-bash">$ heroku login
+$ docker ps
+$ heroku container:login
+$ heroku container:push web --app &quot;&lt;nameapp&gt;&quot;
+$ heroku container:release web --app &quot;&lt;nameapp&gt;&quot;
+
+# Nota: la &quot;nameapp&quot; debe ser la misma que la app creada en Heroku.
+# Nota: el comando &quot;docker ps&quot; es para ver que los contenedores esten activos.
+</code></pre>
+<p>Si todo hubiera marchado bien ahora deberiamos tener nuestra web activa, comprobar la misma con el boton "Open app" en el Dashboard de Heroku.</p>
                 
               
               
@@ -251,20 +388,20 @@
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-      
-        <a href="heroku/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href=".." class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
-                Next
+                Previous
               </span>
-              Heroku Deployment
+              Home
             </div>
           </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-          </div>
         </a>
+      
       
     </nav>
   
@@ -286,10 +423,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": ".", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.ca5457b8.min.js"></script>
+      <script src="../assets/javascripts/bundle.ca5457b8.min.js"></script>
       
     
   </body>
