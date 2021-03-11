@@ -38,3 +38,20 @@ class Certificates(models.Model):
     
     def __str__(self):
         return self.title
+
+class Docs(models.Model):
+    title = models.CharField(verbose_name="Titulo", blank=True, max_length=20)
+    subtitle = models.CharField(verbose_name="Subtitulo", blank=True, max_length=20, default="Nea")
+    description = models.TextField(verbose_name="Descripcion", blank=True, null=True)
+    link = models.URLField(null=True, blank=True)
+    ordering = FloatField(verbose_name='Orden', default=0)
+    created = models.DateTimeField(auto_now_add=True, verbose_name='Fecha de creación')
+    updated = models.DateTimeField(auto_now=True, verbose_name='Fecha de actualización')
+
+    class Meta:
+        verbose_name = "Docs"
+        verbose_name_plural = "Docs"
+        ordering = ['-ordering','created']
+    
+    def __str__(self):
+        return self.title

@@ -1,0 +1,30 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+
+{% block content %}
+<div id="header">
+    <h1 id="supertitle" class="display-3 pt-4">Docs</h1>
+    <h2 id="subheader" class="px-2">It is important.</h2>
+    <p id="superp" class="text-light">Don't forget to document.</p>
+</div>
+
+
+<div class="container my-5">
+    <div class="row">
+        {% for doc in docs %}
+        <div class="card text-white mx-auto mb-5" style="width: 250px; height: 150px;">
+            <a href="{{doc.link }}" title="#" target="blank" style="text-decoration: none;" type="button" data-target="#">
+                <div class="card-body">
+                    <h4 class="card-title text-info">{{doc.title}}</h4>
+                    <h6 class="card-subtitle mb-2 text-light">{{doc.subtitle}}</h6>
+                    <p class="card-text text-muted"><small>{{doc.description}}</small></p>
+                </div>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+
+{% endblock %}

@@ -9,6 +9,7 @@ urlpatterns = [
 
     path('', views.home, name='home'),
     path('certificates/', views.certificates, name="certifications"),
+    path('docs/', views.docs, name='docs'),
     
     path('projects/', include('projects.urls')),
     path('about/', include('about.urls')),
