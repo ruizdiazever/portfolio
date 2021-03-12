@@ -84,12 +84,20 @@ p {
     text-decoration: none !important;
 }
 
+.skill{
+    text-decoration: none !important;
+}
+
 #botoncito{
     font-size: 18pt;
     height: min-content;
 }
 
 #certibotoncito{
+    height: auto;
+}
+
+#contactbotoncito{
     height: auto;
 }
 
@@ -146,6 +154,10 @@ div.copy {
 body > footer > div.copy > p {
     font-family: Roboto, sans-serif;
     font-size: small;
+}
+
+#skills a{
+    text-decoration: none;
 }
 
 /* Hover footer */
