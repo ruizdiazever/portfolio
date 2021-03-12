@@ -5,6 +5,7 @@ from ckeditor.fields import RichTextField
 
 class Projects(models.Model):
     image = models.ImageField(upload_to="projects", verbose_name="Imagen", null=True, blank=True)
+    screen = models.ImageField(upload_to="projects", verbose_name="Screen imagen", null=True, blank=True)
     title = models.CharField(max_length=50, verbose_name="Titulo")
     subtitle = models.CharField(max_length=50, verbose_name="Subtitulo", null=True)
     staff = models.CharField(max_length=120, verbose_name="Staff tecnologico", null=True)
