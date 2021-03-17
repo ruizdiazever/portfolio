@@ -6,7 +6,7 @@
 {% block content %}
     <div id="header" style="margin-bottom: 50px !important;">
         <h1 id="supertitle" class="display-3 pt-4">Hi, I'm Ever!</h1>
-        <h2 id="subheader">A bit of my journey into this world.</h2>
+        <h2 id="subheader">Learn about my journey into the Developer World</h2>
         <p title="Skills" class="text-secondary"><small>Python 3, Django 3, Bootstrap 4, HTML5, CSS3, SQL, Git, JavaScript, Docker, GNU/Linux</small></p>
         
         <a href="{% static 'core/docs/curriculum.pdf' %}" target="blank"><button onclick="this.blur()" type="button" title="Curriculum" id="botoncito" class="btn btn-success btn-lg">Curriculum</button></a>
@@ -52,8 +52,11 @@
     
                             <div class="modal-body text-light">
                                 {{elemento.description|safe}}
-                                <br><br>
-                                <a href="{% if elemento.link != None %} {{elemento.link}} {% endif %}" target="blank"> More.</a>
+
+                                {% if elemento.link != None %}
+                                    <br>
+                                    <a href="{{elemento.link}}" class="text-info" target="blank"><small>More</small></a>
+                                {% endif %}
                             </div>
 
                             <div class="modal-footer" style="background-color: #1E1E1E; border-style: none;">
