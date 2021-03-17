@@ -9,10 +9,27 @@ https://docs.djangoproject.com/en/3.0/howto/deployment/wsgi/
 
 import os
 
+
+# SETTING FOR FIX IN PRODUCTION THE 'whitenoise' problem
+import socket
+
+codeProduction = 'from whitenoise.django import DjangoWhiteNoise'
+codeProduction2 = 'application = DjangoWhiteNoise(application)'
+
+if socket.gethostname()=="glados":
+    pass
+else:
+    codeProduction.read().strip()
+
+
+# ORIGINAL SETTING
 from django.core.wsgi import get_wsgi_application
-from whitenoise.django import DjangoWhiteNoise
-
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'settings.base')
-
 application = get_wsgi_application()
-application = DjangoWhiteNoise(application)
+
+
+# SETTING FOR FIX IN PRODUCTION THE 'whitenoise' problem
+if socket.gethostname()=="glados":
+    pass
+else:
+    codeProduction2.read().strip()
