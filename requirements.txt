@@ -32,7 +32,7 @@ pickleshare==0.7.5
 Pillow==8.1.1
 prompt-toolkit==3.0.8
 ptyprocess==0.7.0
-Pygments==2.7.3
+Pygments==2.7.4
 pylint==2.6.0
 pymdown-extensions==8.1.1
 pytz==2020.4
