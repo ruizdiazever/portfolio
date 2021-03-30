@@ -1,6 +1,6 @@
 from .base import *
 
-with open('/home/ever/Dropbox/Dev/keys/portfolio.txt') as f:
+with open('/home/ever/Dropbox/dev/keys/portfolio.txt') as f:
     SECRET_KEY = f.read().strip()
 
 CSRF_COOKIE_SECURE = False
