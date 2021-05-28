@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
-from core import views
+from apps.core import views
 
 
 urlpatterns = [
@@ -11,10 +11,10 @@ urlpatterns = [
     path('certificates/', views.certificates, name="certifications"),
     path('docs/', views.docs, name='docs'),
     
-    path('projects/', include('projects.urls')),
-    path('about/', include('about.urls')),
-    path('contact/', include('contact.urls')),
-    path('pages/', include('pages.urls'))
+    path('projects/', include('apps.projects.urls')),
+    path('about/', include('apps.about.urls')),
+    path('contact/', include('apps.contact.urls')),
+    path('pages/', include('apps.pages.urls'))
 ]
 
 if settings.DEBUG:

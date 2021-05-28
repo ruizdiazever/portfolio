@@ -1,5 +1,13 @@
 import os
 
+
+from pathlib import Path
+
+from django.urls.conf import path
+# Build paths inside the project like this: BASE_DIR / 'subdir'.
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+
 # CONFIGURATION GOKU
 import socket
 if socket.gethostname()=="omen":
@@ -10,22 +18,29 @@ else:
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
-INSTALLED_APPS = [
+BASE_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'about.apps.AboutConfig',
+]
+
+LOCAL_APPS = [
+    'apps.about.apps.AboutConfig',
+    'apps.core',
+    'apps.contact.apps.ContactConfig',
+    'apps.projects.apps.ProjectsConfig',
+    'apps.pages',
+]
+
+THIRD_APPS = [
     'bootstrap4',
     'ckeditor',
-    'core',
-    'contact.apps.ContactConfig',
-    'projects.apps.ProjectsConfig',
-    'pages',
 ]
+
+INSTALLED_APPS = BASE_APPS + LOCAL_APPS + THIRD_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
