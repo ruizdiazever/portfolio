@@ -2,7 +2,7 @@ import os
 
 # CONFIGURATION GOKU
 import socket
-if socket.gethostname()=="glados":
+if socket.gethostname()=="omen":
     from .local import *
 else:
     from .production import *
