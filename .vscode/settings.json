@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
     "python.pythonPath": "venv/bin/python",
+=======
+    "python.pythonPath": "venv\\Scripts\\python.exe",
+>>>>>>> 3244ffdd814f95d4fbe6ed33d4ad1812c3c69b8f
     "python.jediEnabled": false,
     "python.languageServer": "Pylance",
 }
