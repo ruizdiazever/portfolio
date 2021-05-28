@@ -39,6 +39,20 @@ class Certificates(models.Model):
     def __str__(self):
         return self.title
 
+
+class Curriculum(models.Model):
+    title = models.CharField(verbose_name="Titulo", blank=True, max_length=30)
+    file = models.FileField(upload_to='curriculum/')
+    created = models.DateTimeField(auto_now_add=True, verbose_name='Fecha de creación')
+    updated = models.DateTimeField(auto_now=True, verbose_name='Fecha de actualización')
+
+    class Meta:
+        verbose_name = "Curriculum"
+        verbose_name_plural = "Curriculum"
+    
+    def __str__(self):
+        return self.title
+
 class Docs(models.Model):
     title = models.CharField(verbose_name="Titulo", blank=True, max_length=20)
     subtitle = models.CharField(verbose_name="Subtitulo", blank=True, max_length=20, default="Nea")
