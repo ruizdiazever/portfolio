@@ -24,7 +24,7 @@ else:
 
 # ORIGINAL SETTING
 from django.core.wsgi import get_wsgi_application
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'settings.base')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'portfolio.settings.base')
 application = get_wsgi_application()
 
 
