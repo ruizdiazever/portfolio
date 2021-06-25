@@ -37,4 +37,4 @@ $ cd docs
 $ mkdocs serve
 ```
 
-**Ever Ruiz Diaz**, *Software Student* - [Portfolio](http://everdev.pythonanywhere.com/)
+**Ever Ruiz Diaz**, *Software Student* - [Portfolio](http://www.everdev.it/)
