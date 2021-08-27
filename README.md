@@ -21,7 +21,8 @@ Second version of my personal page, is designed and developed with:
 - Loading of projects with Django's administrator
 
 ## Requirements🤖
-To set up the web it is necessary to install [Python](https://www.python.org/downloads/ ), some initial packages, create the environment and install the web app requirements:
+To set up the web it is necessary to install [Python](https://www.python.org/downloads/ ), some initial packages, 
+create the environment and install the web app requirements:
 
 ```bash
 $ pip install pylint                # Install pylint

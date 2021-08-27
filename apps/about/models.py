@@ -8,7 +8,6 @@ class About(models.Model):
     content = RichTextField(verbose_name="Descripcion")
     created = models.DateTimeField(auto_now_add=True, verbose_name='Fecha de creación')
     updated = models.DateTimeField(auto_now=True, verbose_name='Fecha de actualización')
-
     class Meta:
         verbose_name = "Descripcion"
         verbose_name_plural = "Descripciones"

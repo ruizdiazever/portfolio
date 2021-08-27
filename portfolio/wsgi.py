@@ -16,7 +16,7 @@ import socket
 codeProduction = 'from whitenoise.django import DjangoWhiteNoise'
 codeProduction2 = 'application = DjangoWhiteNoise(application)'
 
-if socket.gethostname()=="omen":
+if socket.gethostname()=="GLaDOS":
     pass
 else:
     codeProduction.read().strip()
@@ -29,7 +29,7 @@ application = get_wsgi_application()
 
 
 # SETTING FOR FIX IN PRODUCTION THE 'whitenoise' problem
-if socket.gethostname()=="omen":
+if socket.gethostname()=="GLaDOS":
     pass
 else:
     codeProduction2.read().strip()
