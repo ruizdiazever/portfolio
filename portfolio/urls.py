@@ -14,7 +14,9 @@ urlpatterns = [
     path('projects/', include('apps.projects.urls')),
     path('about/', include('apps.about.urls')),
     path('contact/', include('apps.contact.urls')),
-    path('pages/', include('apps.pages.urls'))
+    path('pages/', include('apps.pages.urls')),
+    path('steamdeck/', include('apps.steamdeck.urls')),
+
 ]
 
 if settings.DEBUG:

@@ -33,6 +33,7 @@ LOCAL_APPS = [
     'apps.contact.apps.ContactConfig',
     'apps.projects.apps.ProjectsConfig',
     'apps.pages',
+    'apps.steamdeck',
 ]
 
 THIRD_APPS = [
