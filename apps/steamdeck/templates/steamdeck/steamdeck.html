@@ -1,15 +1,67 @@
-{% extends 'core/base.html' %}
-{% load static %}
-{% block title %}Steam Deck - {% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    {% load bootstrap4 %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web portfolio of Ever Ruiz Diaz, software developer.">
+    <link rel="shortcut icon" type="image/png" href="{% static 'core/img/favicon.ico' %}"/>
+    <title>Steam Deck</title>
+    {% load bootstrap4 %}{% bootstrap_css %}
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
 
-{% block content %}
+<body>
+    <video src="{% static 'steamdeck/deck.mp4' %}" autoplay loop muted poster="{% static 'steamdeck/logo.png' %}"></video>
 
-<div class="container">
-    <div class="row">
-        <div class="mx-auto my-5">
-            <p class="text-light">Elemento 1</p>
+    <div class="padre-flex">
+        <div class="content">
+            <a href="https://www.steamdeck.com/"><img class="logo py-2" src="{% static 'steamdeck/logo.png' %}" alt=""></a>
+            <h1 id="days" class="text-dark">127 DAYS</h1>
         </div>
     </div>
-</div>
 
-{% endblock %}
+    <style>
+        .padre-flex{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .padre-flex > div{
+            text-align: center;
+        }
+
+        .logo {
+            max-width: 350px;
+        }
+
+        .content{
+            background-color: white;
+            padding: 15px;
+            padding-inline: 50px;
+            border-radius: 10px;
+        }
+
+        video {
+            position: fixed;
+            min-width: 100%;
+            min-height: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            z-index: -1;
+            filter: blur(1px);
+            filter:brightness(0.5);
+        }
+    </style>
+    
+    <!-- Boostrap -->
+    {% bootstrap_javascript jquery='full' %}
+
+    <!-- DOM Script -->
+    <script src="{% static 'steamdeck/time.js' %}"></script>
+</body>
+</html>

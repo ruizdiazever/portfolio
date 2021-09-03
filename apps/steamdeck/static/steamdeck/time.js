@@ -1,0 +1,1 @@
+var days = document.getElementById("days").innerHTML = "500 DAYS"
