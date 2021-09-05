@@ -16,9 +16,9 @@
     <video src="{% static 'steamdeck/deck.mp4' %}" autoplay loop muted poster="{% static 'steamdeck/logo.png' %}"></video>
 
     <div class="padre-flex">
-        <div class="content">
+        <div class="content px-4 py-3">
             <a href="https://www.steamdeck.com/"><img class="logo py-2" src="{% static 'steamdeck/logo.png' %}" alt=""></a>
-            <h1 id="days" class="text-dark">127 DAYS</h1>
+            <h2 id="days" class="text-dark">How?</h2>
         </div>
     </div>
 
@@ -35,13 +35,11 @@
         }
 
         .logo {
-            max-width: 350px;
+            max-width: 300px;
         }
 
         .content{
             background-color: white;
-            padding: 15px;
-            padding-inline: 50px;
             border-radius: 10px;
         }
 
@@ -57,9 +55,6 @@
             filter:brightness(0.5);
         }
     </style>
-    
-    <!-- Boostrap -->
-    {% bootstrap_javascript jquery='full' %}
 
     <!-- DOM Script -->
     <script src="{% static 'steamdeck/time.js' %}"></script>
