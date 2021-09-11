@@ -12,15 +12,15 @@
 </div>
 
 <div class="container">
-  <div class="row row-cols-1 row-cols-md-3 g-4 p-2">
+  <div class="row">
     {% for project in projects %}
-    <div class="col w-100">
-      <a href="#" title="{{project.title}}" style="text-decoration: none; max-width: 300px; height: 100%; max-height: 350px; width: 100%; margin-bottom: 25px;" type="button" data-toggle="modal" data-target="#{{project.title}}">
-        <div class="card rounded mb-5 w-100" style="background-color: #242526;">
+    <div class="mx-auto">
+      <a href="#" title="{{project.title}}" type="button" data-toggle="modal" data-target="#{{project.title}}" style="text-decoration: none;">
 
+        <div id="tarjeta" class="card" style="background-color: #242526; ">
           <div class="project-image-container px-2">
             <div class="project-image-wrapper mb-2">
-              <img class="card-img-top mx-auto d-flex rounded img-fluid mt-2" src="{{ project.image.url }}" alt="">
+              <img class="card-img-top d-flex rounded img-fluid mt-2" src="{{ project.image.url }}" alt="">
             </div>
           </div>
 
@@ -34,51 +34,53 @@
         </div>
       </a>
 
-    <!-- Modal -->
-    <div class="modal fade" id="{{project.title}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <!-- COLOR HEADER AND FOOTER -->
-        <div class="modal-content text-light" style="background-color: #242526;">
-          <div class="modal-header">
-            <h2 style="color: #03dac6" class="modal-title" id="{{project.title}}">{{project.title}}</h2>
+      <!-- Modal -->
+      <div class="modal fade" id="{{project.title}}" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <!-- COLOR HEADER AND FOOTER -->
+          <div class="modal-content text-light" style="background-color: #242526;">
+            <div class="modal-header">
+              <h2 style="color: #03dac6" class="modal-title" id="{{project.title}}">{{project.title}}</h2>
 
-            <button type="button" id="zeus" class="close" data-dismiss="modal" aria-label="Close" style="color: white;">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-
-          <!-- COLOR BODY -->
-          <div class="modal-body" style="background-color: #262626;">
-            <!-- SCREEN -->
-            <img src="{{project.screen.url}}" class="card-img-top" title="{{project.title}}">
-            <!-- DESCRIPTION -->
-            <div class="px-2 pt-4">{{project.description|safe}}</div>
-            <!-- STAFF -->
-            <div class="pt-3">
-              <h5 class="text-center" style="color: #03dac6;">Technology Staff</h5>
-              <p class="text-secondary text-center"><small>{{project.staff}}</small></p>
+              <button type="button" id="zeus" class="close" data-dismiss="modal" aria-label="Close"
+                style="color: white;">
+                <span aria-hidden="true">&times;</span>
+              </button>
             </div>
-            <!-- Button GITHUB -->
-            <div class="text-center pt-3">
-              {% if project.link != None %}
-              <a href="{{project.link}}" target="blank"><img style="max-width: 25px;"
-                  src="{% static 'core/img/github.webp' %}" title="GitHub"></a>
-              {% endif %}
-            </div>
-          </div>
 
-          <!-- Button CLOSE -->
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            <!-- COLOR BODY -->
+            <div class="modal-body" style="background-color: #262626;">
+              <!-- SCREEN -->
+              <img src="{{project.screen.url}}" class="card-img-top" title="{{project.title}}">
+              <!-- DESCRIPTION -->
+              <div class="px-2 pt-4">{{project.description|safe}}</div>
+              <!-- STAFF -->
+              <div class="pt-3">
+                <h5 class="text-center" style="color: #03dac6;">Technology Staff</h5>
+                <p class="text-secondary text-center"><small>{{project.staff}}</small></p>
+              </div>
+              <!-- Button GITHUB -->
+              <div class="text-center pt-3">
+                {% if project.link != None %}
+                <a href="{{project.link}}" target="blank"><img style="max-width: 25px;"
+                    src="{% static 'core/img/github.webp' %}" title="GitHub"></a>
+                {% endif %}
+              </div>
+            </div>
+
+            <!-- Button CLOSE -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
           </div>
 
         </div>
       </div>
     </div>
-    </div>
-
-
     {% endfor %}
+
+
   </div>
 </div>
 {% endblock %}
