@@ -13,9 +13,8 @@
 
 <div class="container">
   <div class="row">
+    {% for project in projects %}
     <div class="mx-auto">
-      
-      {% for project in projects %}
       <a href="#" title="{{project.title}}" type="button" data-toggle="modal" data-target="#{{project.title}}" style="text-decoration: none;">
         <div id="tarjeta" class="card" style="background-color: #242526; ">
           <div class="project-image-container px-2">
@@ -33,8 +32,6 @@
 
         </div>  
       </a>
-      {% endfor %}
-
       <!-- Modal -->
       <div class="modal fade" id="{{project.title}}" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
@@ -79,7 +76,7 @@
         </div>
       </div>
     </div>
-
+    {% endfor %}
 
   </div>
 </div>
