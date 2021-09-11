@@ -1,4 +1,6 @@
 from django.contrib import admin
+from django.views.generic import RedirectView
+from django.conf.urls import url
 from django.urls import path, include
 from django.conf import settings
 from apps.core import views
@@ -17,6 +19,8 @@ urlpatterns = [
     path('pages/', include('apps.pages.urls')),
     path('steamdeck/', include('apps.steamdeck.urls')),
 
+    # https://stackoverflow.com/questions/9371378/warning-not-found-favicon-ico
+    url(r'^favicon\.ico$',RedirectView.as_view(url='apps/core/static/img/favicon.ico')),
 ]
 
 if settings.DEBUG:
