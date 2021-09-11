@@ -224,7 +224,7 @@ button{
     padding-bottom: 56.2%;
 }
 
-.project-image-wrapper img {
+#logan {
     position  : absolute;
     object-fit: cover;
     width     : 100%;
