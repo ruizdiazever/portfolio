@@ -8,6 +8,14 @@ class About(models.Model):
     content = RichTextField(verbose_name="Descripcion")
     created = models.DateTimeField(auto_now_add=True, verbose_name='Fecha de creación')
     updated = models.DateTimeField(auto_now=True, verbose_name='Fecha de actualización')
+
+    def save(self, *args, **kwargs):
+        try:
+            this = About.objects.get(id=self.id)
+            if this.image != self.image:
+                this.image.delete()
+        except: pass
+        super(About, self).save(*args, **kwargs)
     class Meta:
         verbose_name = "Descripcion"
         verbose_name_plural = "Descripciones"

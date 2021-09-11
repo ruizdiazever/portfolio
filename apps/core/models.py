@@ -46,6 +46,14 @@ class Curriculum(models.Model):
     created = models.DateTimeField(auto_now_add=True, verbose_name='Fecha de creación')
     updated = models.DateTimeField(auto_now=True, verbose_name='Fecha de actualización')
 
+    def save(self, *args, **kwargs):
+        try:
+            this = Curriculum.objects.get(id=self.id)
+            if this.file != self.file:
+                this.file.delete()
+        except: pass
+        super(Curriculum, self).save(*args, **kwargs)
+
     class Meta:
         verbose_name = "Curriculum"
         verbose_name_plural = "Curriculum"
