@@ -237,6 +237,10 @@ button{
     margin-bottom: 50px;
 }
 
+.supertitle {
+    margin-top: 35px;
+}
+
 #gradient{
     background: #f54943; /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #f54943, #03dac6); /* Chrome 10-25, Safari 5.1-6 */

@@ -12,4 +12,4 @@ SECURE_HSTS_PRELOAD = False
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '192.168.1.9']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '192.168.1.9', '0.0.0.0']
