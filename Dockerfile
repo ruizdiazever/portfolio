@@ -1,11 +1,13 @@
-FROM python:3
+FROM python:3.9.7
 ENV PYTHONUNBUFFERED 1
 
+RUN pip install --user --upgrade pip
+RUN mkdir /home/everdev
+WORKDIR /home/everdev
 
-RUN mkdir /code
-WORKDIR /code
-COPY requirements.txt /code/
+COPY requirements.txt .
 RUN pip install -r requirements.txt
 
+COPY . .
 
-COPY . /code/
+RUN cd /home/everdev && touch secret_key.txt && echo 'passwordUltraSecret123' > secret_key.txt
