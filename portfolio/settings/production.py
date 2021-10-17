@@ -1,8 +1,5 @@
 from .base import *
 
-with open('/home/everdev/secret_key.txt') as f:
-    SECRET_KEY = f.read().strip()
-
 CSRF_COOKIE_SECURE = True
 SESSION_COOKIE_SECURE = True
 SECURE_SSL_REDIRECT = True
