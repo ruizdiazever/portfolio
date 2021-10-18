@@ -11,6 +11,8 @@ Second version of my personal page, is designed and developed with:
 - Models
 - ORM of Django
 - Projects app
+- Contact app
+- Steam Deck app
 - About app
 - Advanced admin fields
 - Ckeditor
@@ -20,22 +22,11 @@ Second version of my personal page, is designed and developed with:
 - Filter | Safe
 - Loading of projects with Django's administrator
 
-## Requirements🤖
-To set up the web it is necessary to install [Python](https://www.python.org/downloads/ ), some initial packages, 
-create the environment and install the web app requirements:
-
+## Commands 🤖
+Only for Linux and Mac OS
 ```bash
-$ pip install pylint                # Install pylint
-$ pip install virtualenv            # Install virtualenv
-$ virtualenv env                    # Create environment
-$ source env/bin/activate           # Activate environment
-$ pip install -r requirements.txt   # Install requirements (at the root of the web)
-```
-
-## Documentation 📖
-```bash
-$ cd docs
-$ mkdocs serve
+sh run.sh       # Run app web
+sh doc.sh       # Run documentation app by Mkdocs
 ```
 
 **Ever Ruiz Diaz**, *Software Student* - [Portfolio](http://www.everdev.it/)
