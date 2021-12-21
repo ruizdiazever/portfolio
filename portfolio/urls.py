@@ -16,10 +16,7 @@ urlpatterns = [
     path('about/', include('apps.about.urls')),
     path('contact/', include('apps.contact.urls')),
     path('pages/', include('apps.pages.urls')),
-    path('steamdeck/', include('apps.steamdeck.urls')),
-
-    # https://stackoverflow.com/questions/9371378/warning-not-found-favicon-ico
-    #path(r'^favicon\.ico$',RedirectView.as_view(url='apps/core/static/img/favicon.ico')),
+    path('steamdeck/', include('apps.steamdeck.urls'))
 ]
 
 if settings.DEBUG:
