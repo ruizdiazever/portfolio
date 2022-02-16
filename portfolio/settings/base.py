@@ -1,14 +1,14 @@
-import socket
-import os
-
-
+import socket, os
+from os.path import join, dirname
 from pathlib import Path
+from dotenv import load_dotenv
+dotenv_path = join(dirname(__file__), 'local.env')
+load_dotenv(dotenv_path)
 
-from django.urls.conf import path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = os.environ['SECRET_KEY']
+SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # CONFIGURATION GOKU
 if socket.gethostname() == "GLaDOS":
@@ -217,10 +217,10 @@ CKEDITOR_CONFIGS = {
 
 # EMAIL CONFIG PARA UN SERVER COMO MAILTRAP
 
-EMAIL_HOST = 'smtp.mailtrap.io'
-EMAIL_HOST_USER = '539c0129b5a1b1'
-EMAIL_HOST_PASSWORD = '114bf0dd92be9d'
-EMAIL_PORT = '2525'
+EMAIL_HOST = os.environ.get("EMAIL_HOST")
+EMAIL_HOST_USER = os.environ.get("EMAIL_HOST_USER")
+EMAIL_HOST_PASSWORD = os.environ.get("EMAIL_HOST_PASSWORD")
+EMAIL_PORT = os.environ.get("EMAIL_PORT")
 
 
 # https://stackoverflow.com/questions/67783120/warning-auto-created-primary-key-used-when-not-defining-a-primary-key-type-by
