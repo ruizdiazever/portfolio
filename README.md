@@ -13,4 +13,9 @@ sh run.sh       # Run app web
 sh doc.sh       # Run documentation app by Mkdocs
 ```
 
-**Ever Ruiz Diaz**, *Software Student* - [Portfolio](http://www.everdev.it/)
+## Pages
+- [Portfolio](http://www.everdev.it/)
+- [Linkedin](https://www.linkedin.com/in/everdev/)
+- [Twitter](https://twitter.com/EverToujours)
+
+**Ever Ruiz Diaz**, Software Developer
