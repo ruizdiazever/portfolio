@@ -2,7 +2,7 @@ import socket, os
 from os.path import join, dirname
 from pathlib import Path
 from dotenv import load_dotenv
-dotenv_path = join(dirname(__file__), 'local.env')
+dotenv_path = join(dirname(__file__), '.env')
 load_dotenv(dotenv_path)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
