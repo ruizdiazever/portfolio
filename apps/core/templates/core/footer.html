@@ -13,6 +13,12 @@
         </ul>
     </div>
     <div class="copy">
-        </p>2020 &copy Ever Ruiz Diaz, Software Developer</p>
+        </p><span id="year">2020</span> &copy Ever Ruiz Diaz, Software Developer</p>
     </div>
 </footer>
+
+<script>
+    var date = new Date()
+    var element = document.getElementById("year")
+    element.innerHTML = date.getFullYear()
+</script>
