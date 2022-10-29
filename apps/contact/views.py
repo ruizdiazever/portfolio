@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .forms import ContactForm
+from apps.contact.forms import ContactForm
 from django.urls import reverse
 from django.core.mail import EmailMessage
 from django.contrib import messages

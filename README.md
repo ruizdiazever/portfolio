@@ -1,5 +1,7 @@
 # Portfolio
 
+![Alt text](portfolio/media/portfolio_home.png "Home")
+
 My personal web app portfolio, designed and developed with:
 
 - [**Python 3.10**](https://docs.python.org/3/)

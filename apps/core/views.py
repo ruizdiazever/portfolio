@@ -1,7 +1,5 @@
 from django.shortcuts import render
-from .models import Blog
-from .models import Certificates
-from .models import Docs
+from apps.core.models import Blog, Certificates, Docs
 
 def home(request):
     blog = Blog.objects.all()

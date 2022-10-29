@@ -1,8 +1,6 @@
 from django.contrib import admin
-from .models import Blog
-from .models import Certificates
-from .models import Docs
-from .models import Curriculum
+from apps.core.models import Blog, Certificates, Docs, Curriculum
+
 
 # Blog
 class BlogAdmin(admin.ModelAdmin):

@@ -1,21 +1,12 @@
-import socket
 import os
-from os.path import join, dirname
 from pathlib import Path
-from dotenv import load_dotenv
-dotenv_path = join(dirname(__file__), '.env')
-load_dotenv(dotenv_path)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # CONFIGURATION GOKU
-if socket.gethostname() == "MacBook.local":
-    from .local import *
-else:
-    from .production import *
+from portfolio.settings.local import *
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

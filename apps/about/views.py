@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import About
+from apps.about.models import About
 
 def about(request):
     about = About.objects.all()

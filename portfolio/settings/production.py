@@ -1,4 +1,4 @@
-from .base import *
+from portfolio.settings.base import *
 
 CSRF_COOKIE_SECURE = True
 SESSION_COOKIE_SECURE = True

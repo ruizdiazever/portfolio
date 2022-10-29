@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import About
+from apps.about.models import About
 
 class AboutAdmin(admin.ModelAdmin):
     readonly_fields = ('created', 'updated')
