@@ -1,6 +1,6 @@
 # Portfolio
 
-![Alt text](portfolio/media/portfolio_home.png "Home")
+![Alt text](portfolio/media/home.png "Home")
 
 My personal web app portfolio, designed and developed with:
 
