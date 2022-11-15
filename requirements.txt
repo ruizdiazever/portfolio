@@ -4,6 +4,6 @@ django-ckeditor==6.5.1
 ipython==8.5.0
 mkdocs==1.4.1
 mkdocs-material==8.5.7
-Pillow==9.2.0
+Pillow==9.3.0
 pylint==2.15.5
 python-dotenv==0.21.0
